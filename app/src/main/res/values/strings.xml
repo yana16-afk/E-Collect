@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ECollect</string>
+    <string name="waste_collection_schedules" />
+    <string name="hello">hello</string>
+    <string name="choose_your_district">Choose your district</string>
+    <string name="HELLO">HELLO</string>
+    <string name="waste_segregation_guide">Waste Segregation Guide</string>
+    <string name="dashboard">DASHBOARD</string>
+    <string name="schedule_calendar">Schedule Calendar</string>
+    <string name="recyclable_materials">Recyclable Materials</string>
 </resources>
