@@ -23,8 +23,8 @@
 
     <Button
         android:id="@+id/button_sregister2"
-        android:layout_width="108dp"
-        android:layout_height="48dp"
+        android:layout_width="115dp"
+        android:layout_height="41dp"
         android:backgroundTint="#00903434"
         android:fontFamily="@font/poppins"
         android:text="@string/button_sregister"
@@ -34,10 +34,10 @@
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.789"
+        app:layout_constraintHorizontal_bias="0.812"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.88"
+        app:layout_constraintVertical_bias="0.87"
         tools:ignore="TextContrastCheck,VisualLintOverlap" />
 
     <TextView
@@ -79,7 +79,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/userlogin_bg"
         app:layout_constraintTop_toBottomOf="@+id/ecollect_logo"
-        app:layout_constraintVertical_bias="0.723"
+        app:layout_constraintVertical_bias="0.703"
         tools:ignore="TextContrastCheck" />
 
     <TextView
@@ -115,6 +115,7 @@
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginBottom="42dp"
+        android:autofillHints=""
         android:ems="10"
         android:fontFamily="@font/poppins"
         android:inputType="text"
@@ -125,19 +126,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userlogin_img"
         app:layout_constraintVertical_bias="0.0"
-        tools:ignore="TextFields" />
+        tools:ignore="LabelFor,TextFields" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/password_input"
         android:layout_width="214dp"
         android:layout_height="40dp"
         android:layout_marginBottom="11dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPassword"
-        android:text="Password"
+        android:text="@string/password"
         app:layout_constraintBottom_toTopOf="@+id/button_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginuser_email" />
+        app:layout_constraintTop_toBottomOf="@+id/loginuser_email"
+        tools:ignore="LabelFor" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

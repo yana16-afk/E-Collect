@@ -149,4 +149,5 @@
     <string name="recyclable_buttontxt">Recyclable Material Information Panel</string>
     <string name="wastepanel_button">Waste Segregation Guide Panel</string>
     <string name="navbar">TODO</string>
+    <string name="password">Password</string>
 </resources>
