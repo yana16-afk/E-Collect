@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/phonenumber_input"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegistrationPage">
@@ -19,7 +19,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/login_bg" />
+        app:srcCompat="@drawable/login_bg"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/reg_ecollectlogo"
@@ -49,37 +50,120 @@
         tools:ignore="TextSizeCheck" />
 
     <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="49dp"
-        android:background="#FFFFFF"
+        android:id="@+id/name_input"
+        android:layout_width="265dp"
+        android:layout_height="52dp"
+        android:autofillHints=""
         android:ems="10"
         android:fontFamily="@font/poppins"
+        android:hint="@string/name_input"
         android:inputType="text"
-        android:text="@string/name"
-        app:layout_constraintBottom_toBottomOf="@+id/registration_bg"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/registration_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.334"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/emailAdd_input"
+        android:layout_width="264dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="456dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/emailaddress_input"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/mobilenumber_input"
+        android:layout_width="263dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/mobileno_input"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reg_ecollectlogo"
-        app:layout_constraintVertical_bias="0.053"
-        tools:ignore="LabelFor" />
+        app:layout_constraintTop_toBottomOf="@+id/emailAdd_input"
+        app:layout_constraintVertical_bias="0.052"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="262dp"
+        android:layout_height="61dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/pw_input"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/registration_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailAdd_input"
+        app:layout_constraintVertical_bias="0.243" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="252dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#37B943"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/register_input"
+        app:layout_constraintBottom_toBottomOf="@+id/registration_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailAdd_input"
+        app:layout_constraintVertical_bias="0.448"
+        app:rippleColor="#37B943"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="400dp" />
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="150dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/acc__txt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_input"
+        app:layout_constraintVertical_bias="0.789" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="226dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="438dp">
-
-    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="94dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="@font/poppins"
+        android:text="@string/login_input"
+        android:textColor="#1098AA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintStart_toStartOf="@+id/registration_bg"
+        app:layout_constraintTop_toBottomOf="@+id/password_input"
+        app:layout_constraintVertical_bias="0.355"
+        tools:ignore="TextContrastCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

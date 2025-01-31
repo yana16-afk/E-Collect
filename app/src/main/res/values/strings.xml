@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">ECollect</string>
+    <string name="password">Password</string>
     <string name="onboarding_bg">oboarding_bg\n</string>
     <string name="onboarding_stxt">Your Go-To Solution for Waste Collection Schedules!</string>
     <string name="get_started">Get Started</string>
@@ -33,6 +34,7 @@
     <string name="faqs_headertxt">Frequently Asked Questions</string>
     <string name="title_activity_faqs">Faqs</string>
     <string name="large_text">
+
         "Material is the metaphor.\n\n"
 
         "A material metaphor is the unifying theory of a rationalized space and a system of motion."
@@ -149,5 +151,27 @@
     <string name="recyclable_buttontxt">Recyclable Material Information Panel</string>
     <string name="wastepanel_button">Waste Segregation Guide Panel</string>
     <string name="navbar">TODO</string>
-    <string name="password">Password</string>
+    <string name="main_txtsmall">Your Go-To Solution for Waste Collection Schedules!</string>
+    <string name="log_in">login\n</string>
+    <string name="emailaddress_input">Email Address</string>
+    <string name="login_input">Log in</string>
+    <string name="mobileno_input">Mobile Number</string>
+    <string name="name_input">Name</string>
+    <string name="pw_input">Password</string>
+    <string name="register_input">Register</string>
+    <string name="acc__txt">Already have an account?</string>
+    <string name="recta">TODO</string>
+    <string name="recyButton">TODO</string>
+    <string name="wasteButton">TODO</string>
+    <string name="homeButton">TODO</string>
+    <string name="newsButton">TODO</string>
+    <string name="searchButton">TODO</string>
+    <string name="profiButton">TODO</string>
+    <string name="schedButton">TODO</string>
+    <string name="home_bg">home_bg</string>
+    <string name="choosedistrict">Kindly Choose your District ☺️</string>
+    <string name="wastsched_txt">Waste Collection Schedules:</string>
+    <string name="hello">Hello! 🍀</string>
+    <string name="district1Button">TODO</string>
+    <string name="district2Button">TODO</string>
 </resources>

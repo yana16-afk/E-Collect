@@ -20,7 +20,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/onboarding_bg" />
 
     <TextView
@@ -51,6 +51,11 @@
         app:srcCompat="@drawable/ecollect_text" />
 
     <!-- Truck Logo -->
+
+    <!-- Text Below Truck Logo -->
+
+    <!-- Get Started Button -->
+
     <ImageView
         android:id="@+id/truck_logo"
         android:layout_width="wrap_content"
@@ -60,36 +65,17 @@
         android:contentDescription="@string/onboarding_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ecollect_txt"
-        app:layout_constraintVertical_bias="0.06"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/truck_logo" />
-
-    <!-- Text Below Truck Logo -->
-
-    <!-- Get Started Button -->
-
-    <TextView
-        android:id="@+id/onboarding_stxt"
-        android:layout_width="247dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="22dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="@string/onboarding_stxt"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.595"
-        app:layout_constraintStart_toStartOf="@+id/onboarding_bg"
-        app:layout_constraintTop_toBottomOf="@+id/truck_logo"
-        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button_getstarted"
         android:layout_width="218dp"
         android:layout_height="59dp"
+        android:layout_marginBottom="184dp"
         android:backgroundTint="#37B943"
         android:fontFamily="@font/poppins_semibold"
         android:text="@string/get_started"
@@ -99,8 +85,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/onboarding_stxt"
-        app:layout_constraintVertical_bias="0.048"
         tools:ignore="TextContrastCheck" />
 
     <Button
@@ -119,5 +103,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.844"
         tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView_Start"
+        android:layout_width="299dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/main_txtsmall"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button_getstarted"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/onboarding_bg"
+        app:layout_constraintVertical_bias="0.948"
+        tools:ignore="TextSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
