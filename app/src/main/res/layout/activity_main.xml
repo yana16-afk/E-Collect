@@ -69,10 +69,11 @@
     <!-- Text Below Truck Logo -->
 
     <!-- Get Started Button -->
+
     <TextView
         android:id="@+id/onboarding_stxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="247dp"
+        android:layout_height="53dp"
         android:layout_marginTop="22dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="@string/onboarding_stxt"
@@ -80,7 +81,7 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.595"
         app:layout_constraintStart_toStartOf="@+id/onboarding_bg"
         app:layout_constraintTop_toBottomOf="@+id/truck_logo"
         app:layout_constraintVertical_bias="0.0" />

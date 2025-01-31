@@ -114,7 +114,6 @@
         android:id="@+id/loginuser_email"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_marginTop="22dp"
         android:layout_marginBottom="42dp"
         android:ems="10"
         android:fontFamily="@font/poppins"
@@ -127,5 +126,18 @@
         app:layout_constraintTop_toBottomOf="@+id/userlogin_img"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="TextFields" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="214dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="Password"
+        app:layout_constraintBottom_toTopOf="@+id/button_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginuser_email" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
