@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_noacctxt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminLogin">
+
+    <ImageView
+        android:id="@+id/adminlogin_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/adminlogin_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/login_bg" />
+
+    <ImageView
+        android:id="@+id/adminlogin_logo"
+        android:layout_width="199dp"
+        android:layout_height="66dp"
+        android:contentDescription="@string/adminlogin_logo"
+        app:layout_constraintBottom_toBottomOf="@+id/adminlogin_bg"
+        app:layout_constraintEnd_toEndOf="@+id/adminlogin_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13"
+        app:srcCompat="@drawable/ecollectext_logo" />
+
+    <ImageView
+        android:id="@+id/adminlogin_img"
+        android:layout_width="313dp"
+        android:layout_height="262dp"
+        android:contentDescription="@string/adminlogin_img"
+        app:layout_constraintBottom_toBottomOf="@+id/adminlogin_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.456"
+        app:srcCompat="@drawable/login_img" />
+
+    <TextView
+        android:id="@+id/admin_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/admin_text"
+        android:textColor="#37B943"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="@+id/adminlogin_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminlogin_logo"
+        app:layout_constraintVertical_bias="0.018"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="324dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="22dp"
+        android:autofillHints="Email Address"
+        android:background="@android:drawable/editbox_background"
+        android:elegantTextHeight="true"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/adminemail_address"
+        android:inputType="textEmailAddress"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminlogin_img"
+        app:layout_constraintVertical_bias="0.048"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

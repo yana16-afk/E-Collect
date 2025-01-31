@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/button_adminlogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseLogin"
+    tools:ignore="DuplicateIds">
+
+    <ImageView
+        android:id="@+id/chooselogin_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/chooselogin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/onboarding_bg"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/ecollecttext_logo"
+        android:layout_width="350dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/ecollecttext_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.178"
+        app:srcCompat="@drawable/ecollectext_logo" />
+
+    <TextView
+        android:id="@+id/welcome_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="227dp"
+        android:layout_marginEnd="91dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/welcome_to"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14" />
+
+    <ImageView
+        android:id="@+id/login_img"
+        android:layout_width="342dp"
+        android:layout_height="295dp"
+        android:contentDescription="@string/login_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/chooselogin_bg"
+        app:layout_constraintVertical_bias="0.453"
+        app:srcCompat="@drawable/login_img" />
+
+    <Button
+        android:id="@+id/button_userlogin"
+        android:layout_width="271dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#37B943"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/button_userlogin"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/chooselogin_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.688"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button_adminlogin"
+        android:layout_width="271dp"
+        android:layout_height="57dp"
+        android:backgroundTint="#37B943"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/button_adminlogin"
+        android:textSize="18sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/chooselogin_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_userlogin"
+        app:layout_constraintVertical_bias="0.088"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/text_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="48dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/text_register"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_adminlogin"
+        app:layout_constraintVertical_bias="0.452" />
+
+    <Button
+        android:id="@+id/button_sregister"
+        android:layout_width="108dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#00903434"
+        android:fontFamily="@font/poppins"
+        android:text="@string/button_sregister"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="#1098AA"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.857"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
