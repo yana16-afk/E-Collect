@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#00FFFFFF"
+    tools:context=".JunkshopRates">
+
+    <ImageView
+        android:id="@+id/junkrates_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/junkrates_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/onboarding_bg" />
+
+    <TextView
+        android:id="@+id/junk_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/junk_shop_rates"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/junkrates_bg"
+        app:layout_constraintVertical_bias="0.117"
+        tools:ignore="VisualLintOverlap" />
+
+    <ImageView
+        android:id="@+id/rec2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/rec2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/junkrates_bg"
+        app:layout_constraintVertical_bias="0.65"
+        app:srcCompat="@drawable/rectangleshadow" />
+
+    <LinearLayout
+        android:id="@+id/plasticcard"
+        android:layout_width="280dp"
+        android:layout_height="23dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/navbar_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintStart_toStartOf="@+id/rec2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.909">
+
+        <TextView
+            android:id="@+id/price6_txt"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:text="@string/_50_00_kilo"
+            android:textSize="12sp"
+            tools:ignore="VisualLintBounds,TextSizeCheck,TextSizeCheck" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:barrierDirection="left" />
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="6dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="#4CAF50"
+            android:rotationY="2"
+            tools:ignore="VisualLintBounds" />
+
+        <TextView
+            android:id="@+id/plastictxt"
+            android:layout_width="185dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:text="  Aluminum cans"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:typeface="normal"
+            tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck,VisualLintBounds" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/coppercard"
+        android:layout_width="280dp"
+        android:layout_height="23dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/navbar_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintStart_toStartOf="@+id/rec2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.867">
+
+        <TextView
+            android:id="@+id/price4_txt"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:text="@string/_300_00_kilo"
+            android:textSize="12sp"
+            tools:ignore="VisualLintBounds,TextSizeCheck,TextSizeCheck" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:barrierDirection="left" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="6dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="#4CAF50"
+            android:rotationY="2"
+            tools:ignore="VisualLintBounds" />
+
+        <TextView
+            android:id="@+id/coppertxt"
+            android:layout_width="185dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:text="  Copper Wire"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:typeface="normal"
+            tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck,VisualLintBounds" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aluminumcard"
+        android:layout_width="280dp"
+        android:layout_height="23dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/navbar_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintStart_toStartOf="@+id/rec2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95">
+
+        <TextView
+            android:id="@+id/price5_txt"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:text="@string/_10_00_kilo"
+            android:textSize="12sp"
+            tools:ignore="VisualLintBounds,TextSizeCheck,TextSizeCheck" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:barrierDirection="left" />
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="6dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="#4CAF50"
+            android:rotationY="2"
+            tools:ignore="VisualLintBounds" />
+
+        <TextView
+            android:id="@+id/aluminumtxt"
+            android:layout_width="185dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:text="  Plastic (food bottles)"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:typeface="normal"
+            tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck,VisualLintBounds" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cartoncard"
+        android:layout_width="280dp"
+        android:layout_height="23dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/navbar_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintStart_toStartOf="@+id/rec2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.744">
+
+        <TextView
+            android:id="@+id/price2_txt"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:text="@string/_2_50_kilo"
+            android:textSize="12sp"
+            tools:ignore="VisualLintBounds,TextSizeCheck,TextSizeCheck" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:barrierDirection="left" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="6dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="#4CAF50"
+            android:rotationY="2"
+            tools:ignore="VisualLintBounds" />
+
+        <TextView
+            android:id="@+id/cartonstxt"
+            android:layout_width="185dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:text="  Cartons (corrugated, brown)"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:typeface="normal"
+            tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck,VisualLintBounds" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/newspapercard"
+        android:layout_width="280dp"
+        android:layout_height="23dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/navbar_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintStart_toStartOf="@+id/rec2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.826">
+
+        <TextView
+            android:id="@+id/price3_txt"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:text="@string/_4_00_kilo"
+            android:textSize="12sp"
+            tools:ignore="VisualLintBounds,TextSizeCheck,TextSizeCheck" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:barrierDirection="left" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="6dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="#4CAF50"
+            android:rotationY="2"
+            tools:ignore="VisualLintBounds" />
+
+        <TextView
+            android:id="@+id/newspapertxt"
+            android:layout_width="185dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:text="  Newspaper"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:typeface="normal"
+            tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck,VisualLintBounds" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/junk_txt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/rates_per_material"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/junkrates_bg"
+        app:layout_constraintVertical_bias="0.637"
+        tools:ignore="VisualLintOverlap" />
+
+    <TextView
+        android:id="@+id/loc_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="@string/loc_txt"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/junkrates_bg"
+        app:layout_constraintVertical_bias="0.59" />
+
+    <TextView
+        android:id="@+id/junk_txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/tarnate_junkshop"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/junkrates_bg"
+        app:layout_constraintVertical_bias="0.541"
+        tools:ignore="VisualLintOverlap" />
+
+
+    <ImageButton
+        android:id="@+id/jbackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/jbackButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/junkrates_bg"
+        app:layout_constraintVertical_bias="0.041"
+        app:srcCompat="@drawable/back_button"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageView
+        android:id="@+id/navbar_bg"
+        android:layout_width="393dp"
+        android:layout_height="73dp"
+        android:contentDescription="@string/navbarbg1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rec2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/navbar_bg" />
+
+    <ImageView
+        android:id="@+id/shop1_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/shop1_im"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/junk_txt"
+        app:layout_constraintVertical_bias="0.074"
+        app:srcCompat="@drawable/junkshop1" />
+
+    <ImageButton
+        android:id="@+id/jhomebutton"
+        android:layout_width="87dp"
+        android:layout_height="72dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/jhomebutton1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/junkrates_bg"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/home_on"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/news1_button"
+        android:layout_width="80dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/news1_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/search1_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/jhomebutton"
+        app:layout_constraintTop_toBottomOf="@+id/rec2"
+        app:layout_constraintVertical_bias="0.942"
+        app:srcCompat="@drawable/bulletin" />
+
+    <ImageButton
+        android:id="@+id/search1_button"
+        android:layout_width="80dp"
+        android:layout_height="73dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/search1_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toEndOf="@+id/jhomebutton"
+        app:layout_constraintTop_toBottomOf="@+id/rec2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/search" />
+
+    <ImageButton
+        android:id="@+id/profile1_button"
+        android:layout_width="81dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/profile1_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/search1_button"
+        app:layout_constraintTop_toBottomOf="@+id/aluminumcard"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/profile" />
+
+    <LinearLayout
+        android:id="@+id/papercard"
+        android:layout_width="280dp"
+        android:layout_height="23dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/navbar_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintStart_toStartOf="@+id/rec2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.785">
+
+        <TextView
+            android:id="@+id/price1_txt2"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:text="@string/_8_00_kilo"
+            android:textSize="12sp"
+            tools:ignore="VisualLintBounds,TextSizeCheck,TextSizeCheck" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:barrierDirection="left" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="6dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="#4CAF50"
+            android:rotationY="2"
+            tools:ignore="VisualLintBounds" />
+
+        <TextView
+            android:id="@+id/cartons_txt"
+            android:layout_width="185dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:text="  White Paper (used)"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:typeface="normal"
+            tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck,VisualLintBounds" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
