@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "745752730760",
+    "project_id": "e-collect-dtb",
+    "storage_bucket": "e-collect-dtb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:745752730760:android:41921e1ec5d9d83671933d",
+        "android_client_info": {
+          "package_name": "com.appdev.group3.ecollect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDl8iLXVtZ5bg4LRP7IbOyCJKxRuzcyT5U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
