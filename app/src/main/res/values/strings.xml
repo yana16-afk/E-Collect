@@ -193,4 +193,40 @@
     <string name="item_recycle_btn">Nareresiklo</string>
     <string name="item_hazard_btn">Hazardous</string>
     <string name="item_bulky_btn">Bulky</string>
+
+    <string name="waste_collection_schedules" />
+    <string name="choose_your_district">Choose your district</string>
+    <string name="HELLO">HELLO</string>
+    <string name="waste_segregation_guide">Waste Segregation Guide</string>
+    <string name="recyclable_materials">Recyclable Materials</string>
+
+    <string name="monthly_view_list">Monthly_View_List</string>
+    <string name="container_content_description">Container</string>
+    <string name="waste_scheduled_collection">Waste Scheduled Collection</string>
+    <string name="today_scheduled_collection">Today\'s Scheduled Collection:</string>
+    <string name="back_calendar">back</string>
+    <string name="month">February 2025</string>
+    <string name="forward_calendar">forward</string>
+    <string name="sunday">SUN</string>
+    <string name="monday">MON</string>
+    <string name="tuesday">TUES</string>
+    <string name="wednesday">WED</string>
+    <string name="thursday">THURS</string>
+    <string name="friday">FRI</string>
+    <string name="saturday">SAT</string>
+    <string name="day_in_month">1</string>
+    <string name="calendar_red_circle">Red Circle</string>
+    <string name="weekly_scheduled_collection">Weekly Scheduled Collection</string>
+    <string name="sched_monthly_view">Sched_Monthly_View</string>
+    <string-array name="string_levels">
+        <item>Monthly View</item>
+        <item>Weekly View</item>
+    </string-array>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCeUvKOGmdzv7aBRrk5v5BzbvUhpWOn1EY</string>
+    <string name="recycling_center_header_background">Recycling Center Header Background</string>
+    <string name="recycling_center">Recycling Center</string>
+    <string name="map_list_nav_background">Map and List Nav Background</string>
+    <string name="map_list_nav_highlight">Map and List Nav Highlight</string>
+    <string name="map_nav_bar">Map</string>
+    <string name="list_nav_bar">List</string>
 </resources>

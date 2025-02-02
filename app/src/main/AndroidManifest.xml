@@ -19,13 +19,13 @@
         <!-- Main Activity Launcher -->
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false"/>
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
         <!-- RegistrationPage Activity -->
         <activity
             android:name=".RegistrationPage"
@@ -54,6 +54,19 @@
         <activity
             android:name=".ItemBulkyPanel"
             android:exported="false"/>
+
+        <activity
+            android:name=".CalendarWeekly"
+            android:exported="false"/>
+        <activity
+            android:name=".CalendarMonthly"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

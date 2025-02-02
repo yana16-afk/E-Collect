@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".CalendarWeekly">
+
+    <Spinner
+        android:id="@+id/xml_spinner"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        tools:layout_editor_absoluteX="260dp"
+        tools:layout_editor_absoluteY="68dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintVertical_bias="0.10" />
+
+    <TextView
+        android:id="@+id/weeklyScheduledCollectionTextView"
+        android:layout_width="345dp"
+        android:layout_height="40dp"
+        android:text="@string/weekly_scheduled_collection"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintVertical_bias="0.10"/>
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="520dp"
+        android:src="@drawable/weekly_sched"
+        android:contentDescription="@string/weekly_scheduled_collection"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="470dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="140dp"
+        app:layout_constraintVertical_bias="0.10"/>
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/back_arrow"
+        android:contentDescription="@string/back_arrow"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:foreground="@null"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
