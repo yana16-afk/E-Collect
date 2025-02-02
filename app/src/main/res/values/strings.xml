@@ -175,4 +175,22 @@
     <string name="district1Button">TODO</string>
     <string name="district2Button">TODO</string>
     <string name="navbarbg">TODO</string>
+
+    <string name="back_arrow">Back_Arrow</string>
+    <string name="biodegradable">Biodegradable</string>
+    <string name="biodegradable_items_header"/>\
+    <string name="residual">Residual</string>
+    <string name="residual_items_header"/>
+    <string name="recyclable">Recyclable</string>
+    <string name="recyclable_items_header"/>
+    <string name="hazardous">Hazardous</string>
+    <string name="hazardous_items_header"/>
+    <string name="bulky">Bulky</string>
+    <string name="bulky_items_header"/>
+
+    <string name="item_bio_btn">Nabubulok</string>
+    <string name="item_residual_btn">Residual</string>
+    <string name="item_recycle_btn">Nareresiklo</string>
+    <string name="item_hazard_btn">Hazardous</string>
+    <string name="item_bulky_btn">Bulky</string>
 </resources>

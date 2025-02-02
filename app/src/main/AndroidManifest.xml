@@ -25,10 +25,12 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- RegistrationPage Activity -->
+        </activity>
+        <!-- RegistrationPage Activity -->
         <activity
             android:name=".RegistrationPage"
-            android:exported="true" /> <!-- UserLogin Activity -->
+            android:exported="true" />
+        <!-- UserLogin Activity -->
         <activity
             android:name=".UserLogin"
             android:exported="true" />
@@ -36,6 +38,22 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".ItemBiodegradablePanel"
+            android:exported="false"/>
+        <activity
+            android:name=".ItemResidualPanel"
+            android:exported="false"/>
+        <activity
+            android:name=".ItemRecyclablePanel"
+            android:exported="false"/>
+        <activity
+            android:name=".ItemHazardousPanel"
+            android:exported="false"/>
+        <activity
+            android:name=".ItemBulkyPanel"
+            android:exported="false"/>
     </application>
 
 </manifest>

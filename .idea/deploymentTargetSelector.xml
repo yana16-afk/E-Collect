@@ -4,26 +4,14 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2025-01-20T12:25:11.733114Z">
+        <DropdownSelection timestamp="2025-02-02T06:49:03.184590600Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="LocalEmulator" identifier="path=/Users/yana/.android/avd/Pixel_5_API_35.avd" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\Gigs Betonio\.android\avd\Pixel_5_API_26.avd" />
             </handle>
           </Target>
         </DropdownSelection>
         <DialogSelection />
-      </SelectionState>
-      <SelectionState runConfigName="AdminLogin">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
-      <SelectionState runConfigName="RegistrationPage">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
-      <SelectionState runConfigName="MainActivity">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
-      <SelectionState runConfigName="MainActivity (1)">
-        <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
   </component>
