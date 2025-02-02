@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mainn"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".WasteSegregationSearch">
@@ -22,35 +22,78 @@
 
     <ImageView
         android:id="@+id/recysearch_bg2"
-        android:layout_width="431dp"
-        android:layout_height="692dp"
+        android:layout_width="384dp"
+        android:layout_height="633dp"
         android:contentDescription="@string/recysearch_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.547"
+        app:layout_constraintVertical_bias="0.522"
         app:srcCompat="@drawable/recysearch_rectangle"
         tools:ignore="VisualLintBounds" />
+
+    <ImageButton
+        android:id="@+id/nareresikloButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/nareresiklobutton"
+        app:layout_constraintBottom_toBottomOf="@+id/recysearch_bg2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchfunction"
+        app:layout_constraintVertical_bias="0.494"
+        app:srcCompat="@drawable/nareresiklo"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/hazardousButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/hazardousButton1"
+        app:layout_constraintBottom_toBottomOf="@+id/recysearch_bg2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchfunction"
+        app:layout_constraintVertical_bias="0.495"
+        app:srcCompat="@drawable/hazardous"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/bulkyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/bulkyButton1"
+        app:layout_constraintBottom_toBottomOf="@+id/recysearch_bg2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchfunction"
+        app:layout_constraintVertical_bias="0.907"
+        app:srcCompat="@drawable/bulky" />
 
     <SearchView
         android:id="@+id/searchfunction"
         android:layout_width="312dp"
         android:layout_height="41dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="684dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="652dp"
         android:background="@drawable/searchfunction_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintVertical_bias="0.083"
         tools:ignore="VisualLintBounds" />
 
     <TextView
         android:id="@+id/recy_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="768dp"
+        android:layout_marginBottom="736dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="@string/item_search"
         android:textSize="24sp"
@@ -133,81 +176,38 @@
         android:contentDescription="@string/faqsbackButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back_button"
         tools:ignore="DuplicateSpeakableTextCheck,VisualLintBounds" />
-
-    <ImageButton
-        android:id="@+id/hazardousButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#00FFFFFF"
-        android:contentDescription="@string/hazardousButton"
-        app:layout_constraintBottom_toBottomOf="@+id/recysearch_bg2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.173"
-        app:layout_constraintStart_toStartOf="@+id/direc_bg4"
-        app:layout_constraintTop_toBottomOf="@+id/searchfunction"
-        app:layout_constraintVertical_bias="0.081"
-        app:srcCompat="@drawable/Hazardous"
-        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
-
-    <ImageButton
-        android:id="@+id/nabubulokButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#00FFFFFF"
-        android:contentDescription="@string/nabubulokButton"
-        app:layout_constraintBottom_toBottomOf="@+id/recysearch_bg2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.847"
-        app:layout_constraintStart_toStartOf="@+id/direc_bg4"
-        app:layout_constraintTop_toBottomOf="@+id/searchfunction"
-        app:layout_constraintVertical_bias="0.079"
-        app:srcCompat="@drawable/Nabubulok"
-        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
-
-    <ImageButton
-        android:id="@+id/nareresikloButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#00FFFFFF"
-        android:contentDescription="@string/nareresikloButton"
-        app:layout_constraintBottom_toBottomOf="@+id/recysearch_bg2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.847"
-        app:layout_constraintStart_toStartOf="@+id/direc_bg4"
-        app:layout_constraintTop_toBottomOf="@+id/searchfunction"
-        app:layout_constraintVertical_bias="0.511"
-        app:srcCompat="@drawable/Nareresiklo"
-        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,ImageContrastCheck" />
-
-    <ImageButton
-        android:id="@+id/bulkyButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#00FFFFFF"
-        android:contentDescription="@string/bulkyButton"
-        app:layout_constraintBottom_toBottomOf="@+id/recysearch_bg2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/direc_bg4"
-        app:layout_constraintTop_toBottomOf="@+id/searchfunction"
-        app:layout_constraintVertical_bias="0.941"
-        app:srcCompat="@drawable/Bulky"
-        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/residualButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#00FFFFFF"
-        android:contentDescription="@string/residualButton"
+        android:contentDescription="@string/residualButton1"
         app:layout_constraintBottom_toBottomOf="@+id/recysearch_bg2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.173"
-        app:layout_constraintStart_toStartOf="@+id/direc_bg4"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchfunction"
-        app:layout_constraintVertical_bias="0.511"
-        app:srcCompat="@drawable/Residual"
-        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+        app:layout_constraintVertical_bias="0.074"
+        app:srcCompat="@drawable/residual"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/nabubulokButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/nabubulokButton1"
+        app:layout_constraintBottom_toBottomOf="@+id/recysearch_bg2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchfunction"
+        app:layout_constraintVertical_bias="0.079"
+        app:srcCompat="@drawable/nabubulok"
+        tools:ignore="ImageContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

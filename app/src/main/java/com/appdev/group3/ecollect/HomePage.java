@@ -2,23 +2,57 @@ package com.appdev.group3.ecollect;
 
 import android.os.Bundle;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class HomePage extends AppCompatActivity {
+
+    private ImageButton district2Button;
+    private TextView kindView, pickView, textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_home_page);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+
+        // Initialize views
+        ImageButton district1Button = findViewById(R.id.district1Button);
+        district2Button = findViewById(R.id.district2Button);
+        kindView = findViewById(R.id.kindView);
+        pickView = findViewById(R.id.pickView);
+        textView = findViewById(R.id.textView);
+
+        // Set button listeners
+        district1Button.setOnClickListener(new MyOnClickListener());
+
+        district2Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onDistrict2Selected();
+            }
         });
+    }
+
+    private void onDistrict1Selected() {
+        // Update text or perform actions when District 1 is selected
+        textView.setText(R.string.you_selected_district_1);
+        kindView.setText(R.string.please_choose_a_schedule_for_district_1);
+        pickView.setText(R.string.district_1_waste_schedule);
+    }
+
+    private void onDistrict2Selected() {
+        // Update text or perform actions when District 2 is selected
+        textView.setText(R.string.you_selected_district_2);
+        kindView.setText(R.string.please_choose_a_schedule_for_district_2);
+        pickView.setText(R.string.district_2_waste_schedule);
+    }
+
+    private class MyOnClickListener implements View.OnClickListener {
+        @Override
+        public void onClick(View v) {
+            onDistrict1Selected();
+        }
     }
 }

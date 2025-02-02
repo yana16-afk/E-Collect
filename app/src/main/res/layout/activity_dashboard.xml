@@ -25,10 +25,10 @@
         android:id="@+id/trucklogo"
         android:layout_width="96dp"
         android:layout_height="59dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="40dp"
         android:contentDescription="@string/truck"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/truck_logo" />
@@ -37,17 +37,16 @@
         android:id="@+id/dashboard_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="@string/dashboard"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/navbarbg"
+        app:layout_constraintBottom_toTopOf="@+id/rectangleshadow"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.161"
+        app:layout_constraintTop_toBottomOf="@+id/trucklogo"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="VisualLintOverlap" />
 
     <ImageView
@@ -67,12 +66,13 @@
         android:id="@+id/sched_button"
         android:layout_width="287dp"
         android:layout_height="141dp"
+        android:backgroundTint="#00FFFFFF"
         android:contentDescription="@string/schedButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dashboard_txt"
-        app:layout_constraintVertical_bias="0.105"
+        app:layout_constraintVertical_bias="0.133"
         app:srcCompat="@drawable/sched_calendar"
         tools:ignore="ImageContrastCheck,SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
 
@@ -80,6 +80,7 @@
         android:id="@+id/recy_button"
         android:layout_width="290dp"
         android:layout_height="141dp"
+        android:backgroundTint="#00FFFFFF"
         android:contentDescription="@string/recyButton"
         android:src="@drawable/recyclable"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -90,15 +91,21 @@
         app:layout_constraintVertical_bias="0.811"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
-    <ImageView
-        android:id="@+id/navbar1bg"
-        android:layout_width="395dp"
-        android:layout_height="73dp"
-        android:contentDescription="@string/navbar"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageButton
+        android:id="@+id/waste_button"
+        android:layout_width="286dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="23dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/wasteButton"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangleshadow"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sched_button"
+        app:layout_constraintVertical_bias="0.036"
+        app:srcCompat="@drawable/waste_guide"
+        tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/navbarbg"
@@ -112,20 +119,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/navbar_bg" />
-
-    <ImageButton
-        android:id="@+id/waste_button"
-        android:layout_width="286dp"
-        android:layout_height="143dp"
-        android:layout_marginTop="23dp"
-        android:layout_marginBottom="25dp"
-        android:contentDescription="@string/wasteButton"
-        app:layout_constraintBottom_toTopOf="@+id/recy_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sched_button"
-        app:srcCompat="@drawable/waste_guide"
-        tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,ImageContrastCheck" />
 
     <ImageButton
         android:id="@+id/homeButton"
@@ -148,6 +141,7 @@
         android:layout_width="78dp"
         android:layout_height="68dp"
         android:layout_marginBottom="4dp"
+        android:backgroundTint="#00FFFFFF"
         android:contentDescription="@string/newsButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -163,6 +157,7 @@
         android:layout_width="76dp"
         android:layout_height="66dp"
         android:layout_marginBottom="4dp"
+        android:backgroundTint="#00FFFFFF"
         android:contentDescription="@string/searchButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -176,6 +171,7 @@
         android:id="@+id/profButton"
         android:layout_width="76dp"
         android:layout_height="67dp"
+        android:backgroundTint="#00FFFFFF"
         android:contentDescription="@string/profiButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

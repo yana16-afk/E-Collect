@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/mainn"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomePage">
@@ -48,7 +48,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/home_bg"
-        app:layout_constraintVertical_bias="0.234" />
+        app:layout_constraintVertical_bias="0.207" />
 
     <TextView
         android:id="@+id/textView"
@@ -67,9 +67,10 @@
 
     <ImageButton
         android:id="@+id/district1Button"
-        android:layout_width="325dp"
-        android:layout_height="236dp"
+        android:layout_width="324dp"
+        android:layout_height="243dp"
         android:layout_marginStart="32dp"
+        android:backgroundTint="#00FFFFFF"
         android:contentDescription="@string/district1Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -77,7 +78,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499"
-        app:srcCompat="@drawable/Disctrict1"
+        app:srcCompat="@drawable/district1"
         tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,ImageContrastCheck" />
 
     <ImageButton
@@ -93,7 +94,7 @@
         app:layout_constraintStart_toStartOf="@+id/home_bg"
         app:layout_constraintTop_toBottomOf="@+id/district1Button"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/Disctrict2"
+        app:srcCompat="@drawable/district2"
         tools:ignore="ImageContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

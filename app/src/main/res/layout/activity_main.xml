@@ -73,7 +73,7 @@
 
     <Button
         android:id="@+id/button_getstarted"
-        android:layout_width="218dp"
+        android:layout_width="282dp"
         android:layout_height="59dp"
         android:layout_marginBottom="184dp"
         android:backgroundTint="#37B943"
@@ -108,7 +108,6 @@
         android:id="@+id/textView_Start"
         android:layout_width="299dp"
         android:layout_height="65dp"
-        android:layout_marginBottom="15dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="@string/main_txtsmall"
         android:textAlignment="center"
@@ -116,9 +115,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/button_getstarted"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/onboarding_bg"
-        app:layout_constraintVertical_bias="0.948"
+        app:layout_constraintVertical_bias="0.922"
         tools:ignore="TextSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
