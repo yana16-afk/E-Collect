@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecyclingPlastic">
+
+    <ImageView
+        android:id="@+id/recy_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/benefit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/recycling_bg" />
+
+    <ScrollView
+        android:layout_width="335dp"
+        android:layout_height="456dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yellow_button"
+        app:layout_constraintVertical_bias="0.509"
+        tools:ignore="TextSizeCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/howtocarton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/how_to_recycle_plastic"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sort3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="@string/check1"
+                android:textSize="12sp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/dropoff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="@string/clean1"
+                android:textSize="12sp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/clean4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="@string/sort1"
+                android:textSize="12sp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/reuse"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/dispose1"
+                android:textSize="12sp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/benefitcarton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/benefit1"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/envimetal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F7FFE7"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/_1_environmental_impact"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/metal_answer"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/answer1"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/econometal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F7FFE7"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/_2_economic_efficiency"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/metal_answer2"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/answer2"
+                tools:ignore="TextSizeCheck" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/fbackButton5"
+        android:layout_width="62dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/faqsbackButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057"
+        app:srcCompat="@drawable/back_button"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageView
+        android:id="@+id/plastic_img"
+        android:layout_width="272dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/plastic_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fbackButton5"
+        app:srcCompat="@drawable/plastic_recy"
+        tools:ignore="ImageContrastCheck" />
+
+    <Button
+        android:id="@+id/yellow_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FECD07"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/yellow_container"
+        android:textColor="#FFFEFE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.369"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
