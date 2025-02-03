@@ -13,38 +13,47 @@
         android:theme="@style/Theme.ECollect"
         tools:ignore="ExtraText"
         tools:targetApi="31">
-
-        <!-- Activities Declarations -->
-        <activity android:name=".RecyclingCarton" android:exported="false" />
-        <activity android:name=".RecyclingMetal" android:exported="false" />
-        <activity android:name=".RecyclingOrganic" android:exported="false" />
-        <activity android:name=".RecyclingGlass" android:exported="false" />
-        <activity android:name=".RecyclingPaper" android:exported="false" />
-        <activity android:name=".RecyclingPlastic" android:exported="false" />
-        <activity android:name=".WasteSegregationSearch" android:exported="false" />
-        <activity android:name=".Bulletin" android:exported="false" />
-        <activity android:name=".RecyclableMaterials" android:exported="false" />
-        <activity android:name=".Directory" android:exported="false" />
-        <activity android:name=".RecyclableCategories" android:exported="false" />
-        <activity android:name=".JunkshopRates" android:exported="false" />
-        <activity android:name=".Faqs" android:exported="false" />
-        <activity android:name=".HomePage" android:exported="false" />
-
-        <!-- MainActivity as Launcher Activity -->
-        <activity android:name=".MainActivity" android:exported="true">
+        <activity
+            android:name=".HomePage"
+            android:exported="false" />
+        <!-- Main Activity Launcher -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <!-- RegistrationPage Activity -->
-        <activity android:name=".RegistrationPage" android:exported="true" />
-
+        <activity
+            android:name=".RegistrationPage"
+            android:exported="true" />
         <!-- UserLogin Activity -->
-        <activity android:name=".UserLogin" android:exported="true" />
+        <activity
+            android:name=".UserLogin"
+            android:exported="true" />
 
-        <!-- Meta-Data for Preloaded Fonts -->
-        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".ItemBiodegradablePanel"
+            android:exported="false"/>
+        <activity
+            android:name=".ItemResidualPanel"
+            android:exported="false"/>
+        <activity
+            android:name=".ItemRecyclablePanel"
+            android:exported="false"/>
+        <activity
+            android:name=".ItemHazardousPanel"
+            android:exported="false"/>
+        <activity
+            android:name=".ItemBulkyPanel"
+            android:exported="false"/>
     </application>
+
 </manifest>
