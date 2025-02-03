@@ -36,6 +36,8 @@ android {
 }
 
 dependencies {
+    implementation ("com.google.android.gms:play-services-maps:18.0.0")
+
     // Firebase Bill of Materials (BOM) - Ensures all Firebase versions are compatible
     implementation(platform("com.google.firebase:firebase-bom:33.8.0"))
 

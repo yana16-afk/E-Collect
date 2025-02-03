@@ -34,6 +34,10 @@
     <string name="faqs_headertxt">Frequently Asked Questions</string>
     <string name="title_activity_faqs">Faqs</string>
     <string name="large_text">
+        <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCeUvKOGmdzv7aBRrk5v5BzbvUhpWOn1EY</string>
+    <string name="recycling_center_header_background">Recycling Center Header Background</string>
+    <string name="recycling_center">Recycling Center</string>
+    <string name="map_search_bg">Map Search BG</string>
 
         "Material is the metaphor.\n\n"
 
@@ -347,7 +351,30 @@
     <string name="residual">Residual</string>
     <string name="residual_items_header">Residual Items Header</string>
     <string name="back_arrow">Back</string>
-    <string-array name="string_levels"> <item>Monthly View</item>
-        <item>Weekly View</item> </string-array>
-
+    <string name="user_profile_logo" />
+    <string name="signout_btn">TODO</string>
+    <string name="announce_btn">TODO</string>
+    <string-array name="string_levels">
+        <item>Monthly View</item>
+        <item>Weekly View</item>
+    </string-array>
+    <string name="user_profile">User Profile</string>
+    <string name="name_field_img">Name Field Image</string>
+    <string name="name_text_field">Name Text Field</string>
+    <string name="name_edit_btn">Edit Name</string>
+    <string name="address_field_img">Address Field Image</string>
+    <string name="address_text_field">Address Text Field</string>
+    <string name="address_edit_btn">Edit Address</string>
+    <string name="contact_field_img">Contact Field Image</string>
+    <string name="contact_text_field">Contact Text Field</string>
+    <string name="contact_edit_btn">Edit Contact</string>
+    <string name="email_field_img">Email Field Image</string>
+    <string name="email_text_field">Email Text Field</string>
+    <string name="email_edit_btn">Edit Email</string>
+    <string name="directory_btn">Directory</string>
+    <string name="faq_btn">FAQ</string>
+    <string name="logOut_btn">Log Out</string>
+    <string name="recycling_center_header_background">Recycling Center Header Background</string>
+    <string name="recycling_center">Recycling Center</string>
+    <string name="full_name">Full Name</string>
 </resources>

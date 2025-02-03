@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminProfile">
+
+    <ImageView
+        android:id="@+id/admin_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/admin_bg" />
+
+    <ImageView
+        android:id="@+id/profile_logo2"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="104dp"
+        android:background="@null"
+        android:contentDescription="@string/user_profile_logo"
+        android:foreground="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/truck_logo" />
+
+    <ImageButton
+        android:id="@+id/homeButton7"
+        android:layout_width="73dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="@string/homeButton"
+        android:src="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fbackButton15"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/newsButton7"
+        android:layout_width="78dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/newsButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/bulletin"
+        tools:ignore="VisualLintBounds" />
+
+    <ImageButton
+        android:id="@+id/searchButton7"
+        android:layout_width="76dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/searchButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/search" />
+
+    <ImageButton
+        android:id="@+id/profButton7"
+        android:layout_width="76dp"
+        android:layout_height="67dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/profiButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/profile_on"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/fbackButton15"
+        android:layout_width="62dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="756dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/faqsbackButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/back_button"
+        tools:ignore="DuplicateSpeakableTextCheck,VisualLintBounds" />
+
+    <ImageButton
+        android:id="@+id/signout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/signout_btn"
+        app:layout_constraintBottom_toTopOf="@+id/searchButton7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/announce_btn"
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@drawable/signout_btn" />
+
+    <ImageButton
+        android:id="@+id/announce_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/announce_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.472"
+        app:srcCompat="@drawable/announce_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
