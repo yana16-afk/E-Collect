@@ -39,6 +39,8 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
+        <!-- Item Waste Types -->
+
         <activity
             android:name=".ItemBiodegradablePanel"
             android:exported="false"/>
@@ -53,6 +55,11 @@
             android:exported="false"/>
         <activity
             android:name=".ItemBulkyPanel"
+            android:exported="false"/>
+
+        <!-- User Profile Activity -->
+        <activity
+            android:name=".UserProfilePanel"
             android:exported="false"/>
     </application>
 

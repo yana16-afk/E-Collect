@@ -193,4 +193,31 @@
     <string name="item_recycle_btn">Nareresiklo</string>
     <string name="item_hazard_btn">Hazardous</string>
     <string name="item_bulky_btn">Bulky</string>
+
+    <string name="user_profile_logo">User_Profile_Logo</string>
+    <string name="user_profile">User_Profile</string>
+    <string name="directory_btn">Directory_Button</string>
+    <string name="faq_btn">Faq_Button</string>
+    <string name="logOut_btn">LogOut_Button</string>
+    <string name="edit_btn">Edit_Button</string>
+    <string name="name_edit_btn">Name_Button</string>
+    <string name="address_edit_btn">Address_Button</string>
+    <string name="contact_edit_btn">Contact_Button</string>
+    <string name="email_edit_btn">Email_Button</string>
+    <string name="save_edit_btn">Save_Button</string>
+    <string name="cancel_edit_btn">Cancel_Button</string>
+
+    <string name="name_field_img">Name_Field</string>
+    <string name="address_field_img">Address_Field</string>
+    <string name="contact_field_img">Contact_Field</string>
+    <string name="email_field_img">Email_Field</string>
+    <string name="name_field_cardview">Name_Card_View</string>
+    <string name="address_field_cardview">Address_Card_View</string>
+    <string name="contact_field_cardview">Contact_Card_View</string>
+    <string name="email_field_cardview">Email_Card_View</string>
+
+    <string name="name_text_field"/>
+    <string name="address_text_field"/>
+    <string name="contact_text_field"/>
+    <string name="email_text_field"/>
 </resources>
