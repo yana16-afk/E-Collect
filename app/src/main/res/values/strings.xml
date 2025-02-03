@@ -220,4 +220,12 @@
     <string name="address_text_field"/>
     <string name="contact_text_field"/>
     <string name="email_text_field"/>
+
+    <string name="announce_manage">Manage_Announcement</string>
+    <string name="announce_title_text">Announcement_Title_Text</string>
+
+    <string name="announce_back_btn">Announcement_Back_Button</string>
+    <string name="announce_add_btn">Announcement_Add_Button</string>
+    <string name="announce_dlt_btn">Announcement_Delete_Button</string>
+    <string name="announce_title_btn">Announcement_Title_Button</string>
 </resources>

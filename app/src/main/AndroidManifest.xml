@@ -61,6 +61,12 @@
         <activity
             android:name=".UserProfilePanel"
             android:exported="false"/>
+
+        <!-- Announcement Panel Activity -->
+        <activity
+            android:name=".AnnouncementPanel"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false"/>
     </application>
 
 </manifest>
