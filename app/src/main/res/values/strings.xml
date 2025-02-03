@@ -349,5 +349,4 @@
     <string name="back_arrow">Back</string>
     <string-array name="string_levels"> <item>Monthly View</item>
         <item>Weekly View</item> </string-array>
-
 </resources>
