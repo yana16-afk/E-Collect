@@ -64,56 +64,29 @@
         tools:ignore="DuplicateSpeakableTextCheck,VisualLintBounds" />
 
     <ImageView
-        android:id="@+id/notifView1"
-        android:layout_width="324dp"
-        android:layout_height="118dp"
-        android:contentDescription="@string/notifView1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.416"
-        app:srcCompat="@drawable/notif1" />
-
-    <ImageView
         android:id="@+id/notifView2"
         android:layout_width="324dp"
         android:layout_height="118dp"
         android:contentDescription="@string/notifView2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.59"
+        app:layout_constraintVertical_bias="0.376"
         app:srcCompat="@drawable/notif1" />
-
-    <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/switch1"
-        android:layout_width="271dp"
-        android:layout_height="60dp"
-        android:fontFamily="@font/poppins_medium"
-        android:text="@string/be_notified_for_every_announcement2"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/notif_bg"
-        app:layout_constraintTop_toTopOf="@+id/notifView1"
-        app:layout_constraintVertical_bias="0.063"
-        tools:ignore="TextSizeCheck" />
 
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/switch2"
         android:layout_width="279dp"
         android:layout_height="75dp"
+        android:layout_marginBottom="480dp"
         android:fontFamily="@font/poppins_medium"
         android:text="@string/be_notified_for_the_scheduled_waste_collection2"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/notif_bg"
-        app:layout_constraintTop_toTopOf="@+id/notifView1"
-        app:layout_constraintVertical_bias="0.314"
         tools:ignore="TextSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
