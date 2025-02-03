@@ -1,0 +1,75 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecyclingCenterMap"
+    tools:ignore="VisualLintTextFieldSize">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:layout_width="393dp"
+        android:layout_height="170dp"
+        android:contentDescription="@string/recycling_center_header_background"
+        android:src="@drawable/recycling_center_header_background"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/recycling_centerTextView"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="@string/recycling_center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintVertical_bias="0.10"/>
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="55dp"
+        android:background="@null"
+        android:contentDescription="@string/back_arrow"
+        android:foreground="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_arrow"
+        tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/mapSearch"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_margin="100dp"
+        android:background="@drawable/map_search_bg"
+        android:elevation="5dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:searchIcon="@drawable/ic_search"
+        app:iconifiedByDefault="false"
+        app:queryBackground="@null" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

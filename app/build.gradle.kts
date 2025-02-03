@@ -50,4 +50,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    // Maps SDK for Android
+    //noinspection UseTomlInstead,GradleDependency
+    implementation("androidx.fragment:fragment:1.6.2")
+    //noinspection UseTomlInstead
+    implementation("com.google.android.gms:play-services-maps:19.0.0")
 }

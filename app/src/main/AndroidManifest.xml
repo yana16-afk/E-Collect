@@ -60,6 +60,11 @@
             android:exported="false"/>
         <activity
             android:name=".CalendarMonthly"
+            android:exported="false"/>
+
+
+        <activity
+            android:name=".RecyclingCenterMap"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">ECollect</string>
     <string name="password">Password</string>
-    <string name="onboarding_bg">oboarding_bg\n</string>
+    <string name="onboarding_bg">onboarding_bg\n</string>
     <string name="onboarding_stxt">Your Go-To Solution for Waste Collection Schedules!</string>
     <string name="get_started">Get Started</string>
     <string name="button_getstarted">Button</string>
@@ -225,8 +225,5 @@
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCeUvKOGmdzv7aBRrk5v5BzbvUhpWOn1EY</string>
     <string name="recycling_center_header_background">Recycling Center Header Background</string>
     <string name="recycling_center">Recycling Center</string>
-    <string name="map_list_nav_background">Map and List Nav Background</string>
-    <string name="map_list_nav_highlight">Map and List Nav Highlight</string>
-    <string name="map_nav_bar">Map</string>
-    <string name="list_nav_bar">List</string>
+    <string name="map_search_bg">Map Search BG</string>
 </resources>
