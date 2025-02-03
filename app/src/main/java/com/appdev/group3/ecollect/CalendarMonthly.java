@@ -70,7 +70,7 @@ public class CalendarMonthly extends AppCompatActivity implements OnItemSelected
 
         // Back Button
         ImageButton backButton = findViewById(R.id.backButton);
-        backButton.setOnClickListener(v -> navigateToCalendarWeekly());
+        backButton.setOnClickListener(v -> navigateToDashboard());
 
         // Initialize calendar
         initCalendarWidgets();
@@ -89,8 +89,8 @@ public class CalendarMonthly extends AppCompatActivity implements OnItemSelected
         startActivity(intent);
     }
 
-    private void navigateToCalendarWeekly() {
-        Intent intent = new Intent(CalendarMonthly.this, CalendarWeekly.class);
+    private void navigateToDashboard() {
+        Intent intent = new Intent(CalendarMonthly.this, Dashboard.class);
         startActivity(intent);
     }
 

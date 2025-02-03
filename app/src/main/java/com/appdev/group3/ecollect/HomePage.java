@@ -1,4 +1,4 @@
-package com.appdev.group3.ecollect;
+/* package com.appdev.group3.ecollect;
 
 import android.os.Bundle;
 
@@ -54,5 +54,44 @@ public class HomePage extends AppCompatActivity {
         public void onClick(View v) {
             onDistrict1Selected();
         }
+    }
+} */
+
+package com.appdev.group3.ecollect;
+
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
+import androidx.appcompat.app.AppCompatActivity;
+
+public class HomePage extends AppCompatActivity {
+
+    private ImageButton district2Button;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_home_page);
+
+        ImageButton district1Button = findViewById(R.id.district1Button);
+        district2Button = findViewById(R.id.district2Button);
+
+        district1Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomePage.this, Dashboard.class);
+                startActivity(intent);
+            }
+        });
+
+        district2Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomePage.this, Dashboard.class);
+                startActivity(intent);
+            }
+        });
     }
 }

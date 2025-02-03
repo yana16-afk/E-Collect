@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_semibold"
-        android:text="@string/annoucements"
+        android:text="@string/announcements"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/navbarbg4"
@@ -62,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:fontFamily="@font/poppins"
-                android:text="@string/announcetext1"
+                android:text="@string/no_collection_on_thursday_june_24_2024_due_to_san_juan_festival"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textStyle="bold" />
@@ -80,7 +80,7 @@
                 android:layout_height="52dp"
                 android:layout_marginTop="16dp"
                 android:fontFamily="@font/poppins"
-                android:text="@string/announcetext2"
+                android:text="@string/no_segregation_no_collection_policy_to_be_strictly_implemented2"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textStyle="bold"
@@ -100,7 +100,7 @@
                 android:layout_height="52dp"
                 android:layout_marginTop="16dp"
                 android:fontFamily="@font/poppins"
-                android:text="@string/announcetext3"
+                android:text="@string/waste_technology_india_expo_2023_13th_15th_september_2023_2"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textStyle="bold" />
@@ -128,7 +128,7 @@
         android:src="@drawable/home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="ImageContrastCheck" />
+        tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
 
     <ImageButton
         android:id="@+id/newsButton4"

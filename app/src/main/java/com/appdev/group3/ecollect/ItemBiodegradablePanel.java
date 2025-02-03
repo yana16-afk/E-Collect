@@ -51,7 +51,7 @@ public class ItemBiodegradablePanel extends AppCompatActivity {
         textView.setText("");
 
         StringBuilder textBuilder = new StringBuilder();
-        textBuilder.append(getString(R.string.biodegradable_items_header)).append("\n\n");
+        textBuilder.append(getString(R.string.biodegradable_items_header)).append("\n\n"); //created a string
         for (String item : items) {
             textBuilder.append("•   ").append(item).append("\n");
         }

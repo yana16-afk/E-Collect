@@ -36,7 +36,15 @@ android {
 }
 
 dependencies {
+    // Firebase Bill of Materials (BOM) - Ensures all Firebase versions are compatible
+    implementation(platform("com.google.firebase:firebase-bom:33.8.0"))
 
+    // Firebase Dependencies (No need to specify versions individually)
+    implementation("com.google.firebase:firebase-auth")
+    implementation("com.google.firebase:firebase-database")
+    implementation("com.google.firebase:firebase-appcheck")
+
+    // Other dependencies (Keep these)
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
@@ -46,7 +54,8 @@ dependencies {
     implementation(libs.lifecycle.viewmodel.ktx)
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
-    implementation(libs.firebase.auth)
+
+    // Testing dependencies
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

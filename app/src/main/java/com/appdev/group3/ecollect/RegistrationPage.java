@@ -1,4 +1,4 @@
-package com.appdev.group3.ecollect;
+/* package com.appdev.group3.ecollect;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -86,5 +86,95 @@ public class RegistrationPage extends AppCompatActivity {
             return false;
         }
         return true;
+    }
+} */
+
+package com.appdev.group3.ecollect;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class RegistrationPage extends AppCompatActivity {
+
+    private EditText emailInput;
+    private EditText usernameInput;
+    private EditText mobileNumberInput;
+    private final EditText passwordInput = findViewById(R.id.password_input);
+    private EditText confirmPasswordInput;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_registration_page); // Ensure this matches your XML filename
+
+        // Initialize UI elements
+        emailInput = findViewById(R.id.emailAdd_input);
+        usernameInput = findViewById(R.id.name_input);
+        mobileNumberInput = findViewById(R.id.mobilenumber_input);
+        confirmPasswordInput = findViewById(R.id.password_input); // Change to confirmPassword_input if exists
+        Button registerButton = findViewById(R.id.register_button);
+        Button loginButton = findViewById(R.id.loginButton);
+
+        // Register button click event
+        registerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                registerUser();
+            }
+        });
+
+        // Login button click event
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RegistrationPage.this, UserLogin.class);
+                startActivity(intent);
+                finish(); // Closes RegistrationPage after switching to LoginActivity
+            }
+        });
+    }
+
+    // Registration logic
+    private void registerUser() {
+        String email = emailInput.getText().toString().trim();
+        String username = usernameInput.getText().toString().trim();
+        String mobileNumber = mobileNumberInput.getText().toString().trim();
+        String password = passwordInput.getText().toString().trim();
+        String confirmPassword = confirmPasswordInput.getText().toString().trim();
+
+        // Validation checks
+        if (email.isEmpty() || username.isEmpty() || mobileNumber.isEmpty() || password.isEmpty() || confirmPassword.isEmpty()) {
+            Toast.makeText(this, "Please fill all fields!", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            Toast.makeText(this, "Invalid email format!", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if (!password.equals(confirmPassword)) {
+            Toast.makeText(this, "Passwords do not match!", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if (password.length() < 6) {
+            Toast.makeText(this, "Password must be at least 6 characters long!", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // Here, you would normally store user data (e.g., in Firebase or SQLite)
+        Toast.makeText(this, "Registration Successful!", Toast.LENGTH_SHORT).show();
+
+        // Redirect to login
+        Intent intent = new Intent(RegistrationPage.this, UserLogin.class);
+        startActivity(intent);
+        finish();
     }
 }

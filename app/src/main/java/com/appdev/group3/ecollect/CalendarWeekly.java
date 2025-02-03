@@ -58,7 +58,12 @@ public class CalendarWeekly extends AppCompatActivity implements AdapterView.OnI
 
         // Back Button
         ImageButton backButton = findViewById(R.id.backButton);
-        backButton.setOnClickListener(v -> navigateToCalendarMonthly());
+        backButton.setOnClickListener(v -> navigateToDashboard());
+    }
+
+    private void navigateToCalendarMonthly() {
+        Intent intent1 = new Intent(CalendarWeekly.this, Dashboard.class);
+        startActivity(intent1);
     }
 
     @Override
@@ -67,9 +72,9 @@ public class CalendarWeekly extends AppCompatActivity implements AdapterView.OnI
         Toast.makeText(this, selectedItem, Toast.LENGTH_SHORT).show();
     }
 
-    private void navigateToCalendarMonthly() {
-        Intent intent = new Intent(CalendarWeekly.this, CalendarMonthly.class);
-        startActivity(intent);
+    private void navigateToDashboard() {
+        Intent intent2 = new Intent(CalendarWeekly.this, Dashboard.class);
+        startActivity(intent2);
     }
 
     @Override

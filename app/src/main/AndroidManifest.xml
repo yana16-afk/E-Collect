@@ -11,55 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ECollect"
-        tools:ignore="ExtraText"
         tools:targetApi="31">
         <activity
-            android:name=".HomePage"
+            android:name=".Notifications"
             android:exported="false" />
-        <!-- Main Activity Launcher -->
         <activity
-            android:name=".MainActivity"
-            android:exported="false"/>
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
-        <!-- RegistrationPage Activity -->
-        <activity
-            android:name=".RegistrationPage"
+            android:name=".Dashboard"
             android:exported="true" />
-        <!-- UserLogin Activity -->
         <activity
-            android:name=".UserLogin"
-            android:exported="true" />
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
-
-        <activity
-            android:name=".ItemBiodegradablePanel"
-            android:exported="false"/>
-        <activity
-            android:name=".ItemResidualPanel"
-            android:exported="false"/>
-        <activity
-            android:name=".ItemRecyclablePanel"
-            android:exported="false"/>
-        <activity
-            android:name=".ItemHazardousPanel"
-            android:exported="false"/>
-        <activity
-            android:name=".ItemBulkyPanel"
-            android:exported="false"/>
-
-        <activity
-            android:name=".CalendarWeekly"
-            android:exported="false"/>
-        <activity
-            android:name=".CalendarMonthly"
+            android:name=".HomePage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -67,6 +27,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
-</manifest>
+        <activity
+            android:name=".CalendarMonthly"
+            android:exported="true" />
+            <!--   <intent-filter>
+                  <action android:name="android.intent.action.VIEW" />
+
+                  <category android:name="android.intent.category.DEFAULT" />
+              </intent-filter>
+          </activity>
+      -->
+              <activity
+                  android:name=".CalendarWeekly"
+                  android:exported="false" />
+              <activity
+                  android:name=".MainActivity"
+                  android:exported="false" />
+
+              <meta-data
+                  android:name="com.google.android.geo.API_KEY"
+                  android:value="@string/google_maps_key" />
+          </application>
+
+      </manifest>
