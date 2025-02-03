@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bulletin">
+
+    <ImageView
+        android:id="@+id/direc_bg3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/direc_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/onboarding_bg" />
+
+    <TextView
+        android:id="@+id/bulletin_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/announcements"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/navbarbg4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fbackButton3"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="VisualLintOverlap" />
+
+    <ScrollView
+        android:layout_width="363dp"
+        android:layout_height="667dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bulletin_txt"
+        app:layout_constraintVertical_bias="0.191">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/announce1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/announce1"
+                app:srcCompat="@drawable/announce1" />
+
+            <TextView
+                android:id="@+id/announcetextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/no_collection_on_thursday_june_24_2024_due_to_san_juan_festival"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/announce2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/announce2"
+                app:srcCompat="@drawable/announce2" />
+
+            <TextView
+                android:id="@+id/announcetext2"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/no_segregation_no_collection_policy_to_be_strictly_implemented2"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+
+            <ImageView
+                android:id="@+id/announce3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/announce3"
+                app:srcCompat="@drawable/announce3"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/announcetext3"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/waste_technology_india_expo_2023_13th_15th_september_2023_2"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/navbarbg4"
+        android:layout_width="409dp"
+        android:layout_height="76dp"
+        android:contentDescription="@string/navbarbg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/navbar_bg" />
+
+    <ImageButton
+        android:id="@+id/homeButton4"
+        android:layout_width="73dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="@string/homeButton"
+        android:src="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/newsButton4"
+        android:layout_width="78dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/newsButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/bulletin_on"
+        tools:ignore="VisualLintBounds" />
+
+    <ImageButton
+        android:id="@+id/searchButton4"
+        android:layout_width="76dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/searchButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/search" />
+
+    <ImageButton
+        android:id="@+id/profButton4"
+        android:layout_width="76dp"
+        android:layout_height="67dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/profiButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/profile"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/fbackButton3"
+        android:layout_width="62dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="756dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/faqsbackButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/back_button"
+        tools:ignore="DuplicateSpeakableTextCheck,VisualLintBounds" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

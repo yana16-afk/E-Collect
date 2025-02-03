@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecyclableCategories">
+
+    <ImageView
+        android:id="@+id/recycategories_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/recycategories_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/onboarding_bg" />
+
+    <ImageView
+        android:id="@+id/navbar_bg2"
+        android:layout_width="393dp"
+        android:layout_height="73dp"
+        android:contentDescription="@string/navbarbg1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/navbar_bg" />
+
+    <ImageButton
+        android:id="@+id/jhomebutton2"
+        android:layout_width="77dp"
+        android:layout_height="72dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/jhomebutton1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/home_on"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/news1_button2"
+        android:layout_width="80dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/news1_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profile1_button2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.942"
+        app:srcCompat="@drawable/bulletin" />
+
+    <ImageButton
+        android:id="@+id/search1_button2"
+        android:layout_width="71dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/search1_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/search" />
+
+    <ImageButton
+        android:id="@+id/profile1_button2"
+        android:layout_width="81dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/profile1_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/search1_button2"
+        app:layout_constraintTop_toBottomOf="@+id/recycenters_button"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/junk_txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="704dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/all_about_recycling"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.117"
+        tools:ignore="VisualLintOverlap" />
+
+    <ImageView
+        android:id="@+id/rec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:contentDescription="@string/rec2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.599"
+        app:srcCompat="@drawable/rectangleshadow" />
+
+    <ImageButton
+        android:id="@+id/jbackButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="752dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/jbackButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.041"
+        app:srcCompat="@drawable/back_button"
+        tools:ignore="DuplicateSpeakableTextCheck,VisualLintBounds" />
+
+    <ImageButton
+        android:id="@+id/recycenters_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/recycenters_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/recycategories_bg"
+        app:layout_constraintTop_toBottomOf="@+id/junkshop_button"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/recycenters" />
+
+    <ImageButton
+        android:id="@+id/recymats_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#19FFFFFF"
+        android:contentDescription="@string/recymats_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/junk_txt2"
+        app:layout_constraintVertical_bias="0.04"
+        app:srcCompat="@drawable/recymats" />
+
+    <ImageButton
+        android:id="@+id/junkshop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/junkshop_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.541"
+        app:srcCompat="@drawable/junkshoprates_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

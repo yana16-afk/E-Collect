@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Faqs"
+    tools:ignore="VisualLintBounds">
+
+    <ImageView
+        android:id="@+id/faqs_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/faqsbg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/onboarding_bg" />
+
+    <ImageView
+        android:id="@+id/navbarbg2"
+        android:layout_width="409dp"
+        android:layout_height="76dp"
+        android:contentDescription="@string/navbarbg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/navbar_bg" />
+
+    <ImageButton
+        android:id="@+id/homeButton2"
+        android:layout_width="73dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="@string/homeButton"
+        android:src="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.987"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/newsButton2"
+        android:layout_width="78dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/newsButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintVertical_bias="0.983"
+        app:srcCompat="@drawable/bulletin"
+        tools:ignore="VisualLintBounds" />
+
+    <ImageButton
+        android:id="@+id/searchButton2"
+        android:layout_width="76dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/searchButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.984"
+        app:srcCompat="@drawable/search" />
+
+    <ImageButton
+        android:id="@+id/profButton2"
+        android:layout_width="76dp"
+        android:layout_height="67dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/profiButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/profile_on"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/faqs_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/faqs"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/faqs_bg"
+        app:layout_constraintVertical_bias="0.103"
+        tools:ignore="VisualLintOverlap" />
+
+    <ImageButton
+        android:id="@+id/fbackButton"
+        android:layout_width="62dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/faqsbackButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/faqs_txt"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/faqs_bg"
+        app:layout_constraintVertical_bias="0.033"
+        app:srcCompat="@drawable/back_button"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ScrollView
+        android:layout_width="356dp"
+        android:layout_height="645dp"
+        app:layout_constraintBottom_toTopOf="@+id/navbarbg2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faqs_txt"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TextSizeCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/envimetal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F7FFE7"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/_1_what_is_the_purpose_of_the_e_collect_app"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/metal_answer"
+                android:layout_width="match_parent"
+                android:layout_height="136dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/the_e_collect_app_helps_residents_of_san_juan_stay_updated_with_their_barangay_s_waste_collection_schedules_it_provides_real_time_notifications_waste_segregation_guides_and_other_features_to_promote_efficient_waste_management_in_the_city" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:barrierDirection="top" />
+
+            <TextView
+                android:id="@+id/econometal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F7FFE7"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/_2_who_can_use_the_app"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/the_app_is_specifically_designed_for_residents_of_san_juan_it_ensures_that_all_barangays_in_san_juan_are_covered_by_its_scheduling_and_waste_management_features" />
+
+            <TextView
+                android:id="@+id/q2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F7FFE7"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/_3_is_the_app_free_to_use"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/metal_answer2"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/yes_e_collect_is_free_to_download_and_use_for_all_residents_of_san_juan"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/q3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F7FFE7"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/_4_how_can_i_check_the_waste_collection_schedule_for_my_barangay"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/you_can_view_your_barangay_s_schedule_in_san_juan_by_selecting_your_district_and_barangay_in_the_schedule_calendar_section_of_the_app"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/q4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F7FFE7"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/_5_will_i_get_notified_about_changes_in_the_collection_schedule"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="79dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/yes_san_juan_residents_will_receive_real_time_notifications_for_any_changes_in_waste_collection_schedules_such_as_delays_or_special_collection_days"
+                tools:ignore="TextSizeCheck" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
