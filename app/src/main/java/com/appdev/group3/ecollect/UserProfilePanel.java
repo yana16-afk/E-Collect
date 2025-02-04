@@ -1,18 +1,11 @@
 package com.appdev.group3.ecollect;
 
-
-// import static com.appdev.group3.ecollect.R.id.contactInput;
-// import static com.appdev.group3.ecollect.R.id.nameFormCardView;
-
-import static com.appdev.group3.ecollect.R.id.nameFormCardView;
-
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
-// import android.content.Intent;
+import android.content.Intent;
 import android.view.inputmethod.EditorInfo;
 import android.text.InputType;
 import androidx.cardview.widget.CardView;
-
 
 import android.view.View;
 import android.widget.ImageButton;
@@ -21,46 +14,32 @@ import android.widget.TextView;
 import android.widget.EditText;
 import android.widget.Toast;
 
-
 import java.util.ArrayList;
 
-
 public class UserProfilePanel extends AppCompatActivity {
-
 
     TextView nameTextView;
     TextView addressTextView;
     TextView contactTextView;
+    TextView emailTextView;
 
-
-    // Initialize the Edit Text
-    EditText contactInput = findViewById(R.id.contactInput);
-    EditText emailInput = findViewById(R.id.emailInput);TextView emailTextView;
-
-
-
-
+    EditText contactInput;
+    EditText emailInput;
 
     ImageButton nameEditButton;
     ImageButton addressEditButton;
     ImageButton contactEditButton;
     ImageButton emailEditButton;
-
-
-    // Initialize the CardView
-    CardView nameFormCardView = findViewById(R.id.nameFormCardView);
-    CardView addressFormCardView = findViewById(R.id.addressFormCardView);
-
+    CardView nameFormCardView;
+    CardView addressFormCardView;
 
     ArrayList<String> district1;
     ArrayList<String> district2;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_profile);
-
 
         // Initialize the TextView
         nameTextView = findViewById(R.id.nameTextView);
@@ -68,6 +47,9 @@ public class UserProfilePanel extends AppCompatActivity {
         contactTextView = findViewById(R.id.contactTextView);
         emailTextView = findViewById(R.id.emailTextView);
 
+        // Initialize the CardView
+        nameFormCardView = findViewById(R.id.nameFormCardView);
+        addressFormCardView = findViewById(R.id.addressFormCardView);
 
         // Initialize the Buttons
         nameEditButton = findViewById(R.id.nameEditButton);
@@ -75,13 +57,15 @@ public class UserProfilePanel extends AppCompatActivity {
         contactEditButton = findViewById(R.id.contactEditButton);
         emailEditButton = findViewById(R.id.emailEditButton);
 
+        // Initialize the Edit Text
+        contactInput = findViewById(R.id.contactInput);
+        emailInput = findViewById(R.id.emailInput);
 
         // Assign Click Listener
         nameEditButton.setOnClickListener(v -> nameEditDialog());
         addressEditButton.setOnClickListener(v -> addressDialog());
         contactEditButton.setOnClickListener(v -> contactDialog());
         emailEditButton.setOnClickListener(v -> emailDialog());
-
 
 //        // Directory Button
 //        ImageButton directoryButton = findViewById(R.id.directoryButton);
@@ -95,7 +79,6 @@ public class UserProfilePanel extends AppCompatActivity {
 //        ImageButton logOutButton = findViewById(R.id.logOutButton);
 //        logOutButton.setOnClickListener(v -> logOutUserProfile());
     }
-
 
 //    private void navigateToDirectory() {
 //        Intent intent = new Intent(UserProfilePanel.this, Directory.class);
@@ -112,26 +95,21 @@ public class UserProfilePanel extends AppCompatActivity {
 //        startActivity(intent);
 //    }
 
-
     private void nameEditDialog() {
         // Display nameFormCardView
         nameFormCardView.setVisibility(View.VISIBLE);
-
 
         // Get the views inside the CardView
         EditText firstNameInput = nameFormCardView.findViewById(R.id.firstNameInput);
         EditText lastNameInput = nameFormCardView.findViewById(R.id.lastNameInput);
 
-
         Button saveNameButton = nameFormCardView.findViewById(R.id.saveNameButton);
         Button cancelNameButton = nameFormCardView.findViewById(R.id.cancelNameButton);
-
 
         // Handle Save button click
         saveNameButton.setOnClickListener(v -> {
             String firstName = firstNameInput.getText().toString().trim();
             String lastName = lastNameInput.getText().toString().trim();
-
 
             // Check if both fields are non-empty
             if (firstName.isEmpty() || lastName.isEmpty()) {
@@ -147,12 +125,10 @@ public class UserProfilePanel extends AppCompatActivity {
                 String fullName = firstName + " " + lastName;
                 nameTextView.setText(fullName); // Update the TextView with the new name
 
-
                 // Hide the CardView after saving
                 nameFormCardView.setVisibility(View.GONE);
             }
         });
-
 
         // Handle Cancel button click
         cancelNameButton.setOnClickListener(v -> {
@@ -161,16 +137,13 @@ public class UserProfilePanel extends AppCompatActivity {
         });
     }
 
-
     private void addressDialog() {
         // Display nameFormCardView
         addressFormCardView.setVisibility(View.VISIBLE);
 
-
         // Initialize the ArrayLists
         district1 = new ArrayList<>();
         district2 = new ArrayList<>();
-
 
         // Barangays in District 1
         district1.add("Balong-Bato");
@@ -183,7 +156,6 @@ public class UserProfilePanel extends AppCompatActivity {
         district1.add("Rivera");
         district1.add("Salapan");
         district1.add("San Perfecto");
-
 
         // Barangays in District 2
         district2.add("Addition Hills");
@@ -198,23 +170,19 @@ public class UserProfilePanel extends AppCompatActivity {
         district2.add("Tibagan");
         district2.add("West Crame");
 
-
         // Get the views inside the CardView
         EditText streetNameInput = addressFormCardView.findViewById(R.id.streetNameInput);
         EditText baranggayNameInput = addressFormCardView.findViewById(R.id.baranggayNameInput);
         EditText cityNameInput = addressFormCardView.findViewById(R.id.cityNameInput);
 
-
         Button saveNameButton = addressFormCardView.findViewById(R.id.saveAddressButton);
         Button cancelNameButton = addressFormCardView.findViewById(R.id.cancelAddressButton);
-
 
         // Handle Save button click
         saveNameButton.setOnClickListener(v -> {
             String streetName = streetNameInput.getText().toString().trim();
             String baranggayName = baranggayNameInput.getText().toString().trim();
             String cityName = cityNameInput.getText().toString().trim();
-
 
             // Check if all fields are non-empty
             if (streetName.isEmpty() || baranggayName.isEmpty() || cityName.isEmpty()) {
@@ -229,13 +197,11 @@ public class UserProfilePanel extends AppCompatActivity {
                 // Validate if the baranggay exists in district1 or district2
                 String district = "";
 
-
                 if (district1.contains(baranggayName)) {
                     district = "District 1";
                 } else if (district2.contains(baranggayName)) {
                     district = "District 2";
                 }
-
 
                 // If the district was found, append it to the address
                 if (!district.isEmpty()) {
@@ -247,12 +213,10 @@ public class UserProfilePanel extends AppCompatActivity {
                     return;
                 }
 
-
                 // Hide the CardView after saving
                 addressFormCardView.setVisibility(View.GONE);
             }
         });
-
 
         // Handle Cancel button click
         cancelNameButton.setOnClickListener(v -> {
@@ -261,22 +225,18 @@ public class UserProfilePanel extends AppCompatActivity {
         });
     }
 
-
     private void contactDialog() {
         // Disable other edit buttons
         nameEditButton.setEnabled(false);
         addressEditButton.setEnabled(false);
         emailEditButton.setEnabled(false);
 
-
         contactTextView.setVisibility(View.GONE);
         contactInput.setVisibility(View.VISIBLE);
-
 
         // Ensure "Enter" key works as a submission action
         contactInput.setImeOptions(EditorInfo.IME_ACTION_DONE);
         contactInput.setInputType(InputType.TYPE_CLASS_PHONE);
-
 
         // Handle "Enter" key press
         contactInput.setOnEditorActionListener((v, actionId, event) -> {
@@ -287,7 +247,6 @@ public class UserProfilePanel extends AppCompatActivity {
             return false;
         });
 
-
         // Validate when the user clicks away
         contactInput.setOnFocusChangeListener((v, hasFocus) -> {
             if (!hasFocus) {
@@ -296,24 +255,19 @@ public class UserProfilePanel extends AppCompatActivity {
         });
     }
 
-
     private void emailDialog() {
         // Disable other edit buttons
         nameEditButton.setEnabled(false);
         addressEditButton.setEnabled(false);
         contactEditButton.setEnabled(false);
 
-
         emailInput.setSingleLine(true);
-
 
         emailTextView.setVisibility(View.GONE);
         emailInput.setVisibility(View.VISIBLE);
 
-
         // Ensure "Enter" key works as a submission action
         emailInput.setImeOptions(EditorInfo.IME_ACTION_DONE);
-
 
         // Handle "Enter" key press
         emailInput.setOnEditorActionListener((v, actionId, event) -> {
@@ -324,7 +278,6 @@ public class UserProfilePanel extends AppCompatActivity {
             return false;
         });
 
-
         // Validate when the user clicks away
         emailInput.setOnFocusChangeListener((v, hasFocus) -> {
             if (!hasFocus) {
@@ -333,28 +286,23 @@ public class UserProfilePanel extends AppCompatActivity {
         });
     }
 
-
     private void validatePhoneNumber() {
         String phone = contactInput.getText().toString().trim();
-
 
         if (!phone.startsWith("09")) {
             Toast.makeText(this, "Invalid number format. Must start with '09'", Toast.LENGTH_SHORT).show();
             return;
         }
 
-
         if (phone.length() != 11) {
             Toast.makeText(this, "Phone number must be 11 digits", Toast.LENGTH_SHORT).show();
             return;
         }
 
-
         // If both conditions pass, update UI
         contactTextView.setText(phone);
         contactInput.setVisibility(View.GONE);
         contactTextView.setVisibility(View.VISIBLE);
-
 
         // Re-enable other edit buttons after editing is done
         nameEditButton.setEnabled(true);
@@ -362,21 +310,17 @@ public class UserProfilePanel extends AppCompatActivity {
         emailEditButton.setEnabled(true);
     }
 
-
     private void validateEmail() {
         String email = emailInput.getText().toString().trim();
-
 
         if (!email.contains("@")) {
             Toast.makeText(this, "Invalid Email Address", Toast.LENGTH_SHORT).show();
             return;
         }
 
-
         // List of valid email extensions
         String[] validExtensions = {".ph", ".com", ".org", ".edu", ".net", ".gov",
                 ".com.ph", ".org.ph", ".edu.ph", ".net.ph", ".gov.ph"};
-
 
         // Check if the email ends with any of the valid extensions
         boolean isValidExtension = false;
@@ -387,18 +331,15 @@ public class UserProfilePanel extends AppCompatActivity {
             }
         }
 
-
         if (!isValidExtension) {
             Toast.makeText(this, "Invalid Email Extension", Toast.LENGTH_SHORT).show();
             return;
         }
 
-
         // If both conditions pass, update UI
         emailTextView.setText(email);
         emailInput.setVisibility(View.GONE);
         emailTextView.setVisibility(View.VISIBLE);
-
 
         // Re-enable other edit buttons after editing is done
         nameEditButton.setEnabled(true);

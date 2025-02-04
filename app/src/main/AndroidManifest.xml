@@ -23,76 +23,76 @@
             android:exported="false" />
         <activity
             android:name=".Dashboard"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".HomePage"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false"/>
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
         <activity
             android:name=".CalendarMonthly"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".Bulletin"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".Directory"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".Faqs"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".WasteSegregationSearch"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".ItemBiodegradablePanel"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".ItemBulkyPanel"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".ItemHazardousPanel"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".ItemRecyclablePanel"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".ItemResidualPanel"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".JunkshopRates"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".RecyclableCategories"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".RecyclableMaterials"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".RecyclingCarton"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".RecyclingGlass"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".RecyclingMetal"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".RecyclingOrganic"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".RecyclingPaper"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".RecyclingPlastic"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".RegistrationPage"
-            android:exported="true" />
+            android:exported="false" />
         <!--
    <intent-filter>
               <action android:name="android.intent.action.VIEW" />
@@ -110,7 +110,22 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="AIzaSyCeUvKOGmdzv7aBRrk5v5BzbvUhpWOn1EY" />
+
+        <activity
+            android:name=".RecyclingCenterMap"
+            android:exported="false" />
+
+        <activity
+        android:name=".UserProfilePanel"
+        android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
