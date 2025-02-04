@@ -2,4 +2,20 @@
 <resources>
     <item name="button_adminlogin" type="id" />
     <item name="category_result" type="id" />
+    <item name="activity_user_profile" type="id" />
+    <item name="profile_logo" type="id" />
+    <item name="addressEditButton" type="id" />
+    <item name="addressFieldView" type="id" />
+    <item name="contactFieldView" type="id" />
+    <item name="contactTextView" type="id" />
+    <item name="contactEditButton" type="id" />
+    <item name="emailFieldView" type="id" />
+    <item name="emailTextView" type="id" />
+    <item name="emailEditButton" type="id" />
+    <item name="supportLayout" type="id" />
+    <item name="nameTextView" type="id" />
+    <item name="addressTextView" type="id" />
+    <item name="nameEditButton" type="id" />
+    <item name="contactInput" type="id" />
+    <item name="emailInput" type="id" />
 </resources>

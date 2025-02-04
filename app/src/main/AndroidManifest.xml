@@ -13,7 +13,10 @@
         android:theme="@style/Theme.ECollect"
         tools:targetApi="31">
         <activity
-            android:name=".AdminProfile"
+            android:name=".AddAnnouncement"
+            android:exported="false" />
+        <activity
+            android:name=".EditAnnouncement"
             android:exported="false" />
         <activity
             android:name=".Notifications"
@@ -33,13 +36,70 @@
         <activity
             android:name=".CalendarMonthly"
             android:exported="true" />
+        <activity
+            android:name=".Bulletin"
+            android:exported="true" />
+        <activity
+            android:name=".Directory"
+            android:exported="true" />
+        <activity
+            android:name=".Faqs"
+            android:exported="true" />
+        <activity
+            android:name=".WasteSegregationSearch"
+            android:exported="true" />
+        <activity
+            android:name=".ItemBiodegradablePanel"
+            android:exported="true" />
+        <activity
+            android:name=".ItemBulkyPanel"
+            android:exported="true" />
+        <activity
+            android:name=".ItemHazardousPanel"
+            android:exported="true" />
+        <activity
+            android:name=".ItemRecyclablePanel"
+            android:exported="true" />
+        <activity
+            android:name=".ItemResidualPanel"
+            android:exported="true" />
+        <activity
+            android:name=".JunkshopRates"
+            android:exported="true" />
+        <activity
+            android:name=".RecyclableCategories"
+            android:exported="true" />
+        <activity
+            android:name=".RecyclableMaterials"
+            android:exported="true" />
+        <activity
+            android:name=".RecyclingCarton"
+            android:exported="true" />
+        <activity
+            android:name=".RecyclingGlass"
+            android:exported="true" />
+        <activity
+            android:name=".RecyclingMetal"
+            android:exported="true" />
+        <activity
+            android:name=".RecyclingOrganic"
+            android:exported="true" />
+        <activity
+            android:name=".RecyclingPaper"
+            android:exported="true" />
+        <activity
+            android:name=".RecyclingPlastic"
+            android:exported="true" />
+        <activity
+            android:name=".RegistrationPage"
+            android:exported="true" />
         <!--
    <intent-filter>
-                  <action android:name="android.intent.action.VIEW" />
+              <action android:name="android.intent.action.VIEW" />
 
-                  <category android:name="android.intent.category.DEFAULT" />
-              </intent-filter>
-          </activity>
+              <category android:name="android.intent.category.DEFAULT" />
+          </intent-filter>
+      </activity>
         -->
         <activity
             android:name=".CalendarWeekly"
