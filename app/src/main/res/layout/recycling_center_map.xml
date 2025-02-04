@@ -13,6 +13,68 @@
         android:layout_height="match_parent"/>
 
     <ImageView
+        android:id="@+id/navbarbg7"
+        android:layout_width="409dp"
+        android:layout_height="76dp"
+        android:contentDescription="@string/navbarbg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/navbar_bg" />
+
+    <ImageButton
+        android:id="@+id/homeButton8"
+        android:layout_width="73dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="@string/homeButton"
+        android:src="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/newsButton8"
+        android:layout_width="78dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/newsButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/bulletin"
+        tools:ignore="VisualLintBounds" />
+
+    <ImageButton
+        android:id="@+id/searchButton8"
+        android:layout_width="76dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/searchButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/map_on" />
+
+    <ImageButton
+        android:id="@+id/profButton8"
+        android:layout_width="76dp"
+        android:layout_height="67dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/profiButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/profile"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
         android:layout_width="393dp"
         android:layout_height="170dp"
         android:contentDescription="@string/recycling_center_header_background"

@@ -1,39 +1,13 @@
-package com.appdev.group3.ecollect;/* package com.appdev.group3.ecollect;
-
-import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-public class WasteSegregationSearch extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_waste_segregation_search);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.mainn), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
-    }
-} */
-
-
+package com.appdev.group3.ecollect;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-//import com.appdev.group3.ecollect.data.WasteData;
 
 public class WasteSegregationSearch extends AppCompatActivity {
 
@@ -63,13 +37,12 @@ public class WasteSegregationSearch extends AppCompatActivity {
         });
 
         // Handle category button clicks
-        findViewById(R.id.nabubulokButton).setOnClickListener(view -> showCategoryInfo("Biodegradable"));
-        findViewById(R.id.nareresikloButton).setOnClickListener(view -> showCategoryInfo("Recyclable"));
-        findViewById(R.id.hazardousButton).setOnClickListener(view -> showCategoryInfo("Hazardous"));
-        findViewById(R.id.bulkyButton).setOnClickListener(view -> showCategoryInfo("Bulky Waste"));
-        findViewById(R.id.residualButton).setOnClickListener(view -> showCategoryInfo("Residual Waste"));
+        findViewById(R.id.nabubulokButton).setOnClickListener(view -> navigateToCategory("Biodegradable"));
+        findViewById(R.id.nareresikloButton).setOnClickListener(view -> navigateToCategory("Recyclable"));
+        findViewById(R.id.hazardousButton).setOnClickListener(view -> navigateToCategory("Hazardous"));
+        findViewById(R.id.bulkyButton).setOnClickListener(view -> navigateToCategory("Bulky Waste"));
+        findViewById(R.id.residualButton).setOnClickListener(view -> navigateToCategory("Residual Waste"));
     }
-
 
     @SuppressLint("SetTextI18n")
     private void searchWaste(String item) {
@@ -79,9 +52,28 @@ public class WasteSegregationSearch extends AppCompatActivity {
     }
 
     @SuppressLint("SetTextI18n")
-    private void showCategoryInfo(String category) {
-        categoryResult.setText("Waste Type: " + category);
-        Toast.makeText(this, "Waste Type: " + category, Toast.LENGTH_SHORT).show();
+    private void navigateToCategory(String category) {
+        Intent intent;
+        switch (category) {
+            case "Biodegradable":
+                intent = new Intent(this, ItemBiodegradablePanel.class);
+                break;
+            case "Recyclable":
+                intent = new Intent(this, ItemRecyclablePanel.class);
+                break;
+            case "Hazardous":
+                intent = new Intent(this, ItemHazardousPanel.class);
+                break;
+            case "Bulky Waste":
+                intent = new Intent(this, ItemBulkyPanel.class);
+                break;
+            case "Residual Waste":
+                intent = new Intent(this, ItemResidualPanel.class);
+                break;
+            default:
+                throw new IllegalArgumentException("Unknown category: " + category);
+        }
+        startActivity(intent);
+        Toast.makeText(this, "Navigating to: " + category, Toast.LENGTH_SHORT).show();
     }
 }
-

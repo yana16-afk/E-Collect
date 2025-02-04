@@ -28,10 +28,10 @@ public class ItemBiodegradablePanel extends AppCompatActivity {
 
         // Back Button
          ImageButton backButton = findViewById(R.id.backButton);
-         backButton.setOnClickListener(v -> navigateToItemSearch());
+         backButton.setOnClickListener(v -> navigateToWasteSegregationSearch());
     }
 
-     private void navigateToItemSearch() {
+     private void navigateToWasteSegregationSearch() {
         Intent intent = new Intent(ItemBiodegradablePanel.this, Dashboard.class);
         startActivity(intent);
     }

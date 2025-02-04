@@ -83,8 +83,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/search1_button2"
-        app:layout_constraintTop_toBottomOf="@+id/recycenters_button"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/profile" />
 
     <TextView
@@ -129,21 +127,6 @@
         app:layout_constraintVertical_bias="0.041"
         app:srcCompat="@drawable/back_button"
         tools:ignore="DuplicateSpeakableTextCheck,VisualLintBounds" />
-
-    <ImageButton
-        android:id="@+id/recycenters_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:backgroundTint="#00FFFFFF"
-        android:contentDescription="@string/recycenters_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="@+id/recycategories_bg"
-        app:layout_constraintTop_toBottomOf="@+id/junkshop_button"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/recycenters" />
 
     <ImageButton
         android:id="@+id/recymats_button"
