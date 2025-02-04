@@ -1,8 +1,10 @@
 package com.appdev.group3.ecollect;
 
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
-import android.content.Intent;
+
+import android.provider.ContactsContract;
 import android.view.inputmethod.EditorInfo;
 import android.text.InputType;
 import androidx.cardview.widget.CardView;
@@ -47,6 +49,7 @@ public class UserProfilePanel extends AppCompatActivity {
         contactTextView = findViewById(R.id.contactTextView);
         emailTextView = findViewById(R.id.emailTextView);
 
+
         // Initialize the CardView
         nameFormCardView = findViewById(R.id.nameFormCardView);
         addressFormCardView = findViewById(R.id.addressFormCardView);
@@ -56,6 +59,8 @@ public class UserProfilePanel extends AppCompatActivity {
         addressEditButton = findViewById(R.id.addressEditButton);
         contactEditButton = findViewById(R.id.contactEditButton);
         emailEditButton = findViewById(R.id.emailEditButton);
+        ImageButton directoryButton = findViewById(R.id.directoryButton);
+        ImageButton faqButton = findViewById(R.id.faqButton);
 
         // Initialize the Edit Text
         contactInput = findViewById(R.id.contactInput);
@@ -66,10 +71,11 @@ public class UserProfilePanel extends AppCompatActivity {
         addressEditButton.setOnClickListener(v -> addressDialog());
         contactEditButton.setOnClickListener(v -> contactDialog());
         emailEditButton.setOnClickListener(v -> emailDialog());
+        directoryButton.setOnClickListener(v -> Directory());
+        faqButton.setOnClickListener(v -> Faqs());
+//         Directory Button
 
-//        // Directory Button
-//        ImageButton directoryButton = findViewById(R.id.directoryButton);
-//        directoryButton.setOnClickListener(v -> navigateToDirectory());
+
 //
 //        // FAQ Button
 //        ImageButton faqButton = findViewById(R.id.faqButton);
@@ -137,6 +143,15 @@ public class UserProfilePanel extends AppCompatActivity {
         });
     }
 
+    private void Directory() {
+        Intent intent = new Intent(UserProfilePanel.this, Directory.class);
+        startActivity(intent);
+    }
+    private void Faqs() {
+        Intent intent = new Intent(UserProfilePanel.this, Faqs.class);
+        startActivity(intent);
+    }
+
     private void addressDialog() {
         // Display nameFormCardView
         addressFormCardView.setVisibility(View.VISIBLE);
@@ -172,7 +187,7 @@ public class UserProfilePanel extends AppCompatActivity {
 
         // Get the views inside the CardView
         EditText streetNameInput = addressFormCardView.findViewById(R.id.streetNameInput);
-        EditText baranggayNameInput = addressFormCardView.findViewById(R.id.baranggayNameInput);
+        EditText barangayNameInput = addressFormCardView.findViewById(R.id.baranggayNameInput);
         EditText cityNameInput = addressFormCardView.findViewById(R.id.cityNameInput);
 
         Button saveNameButton = addressFormCardView.findViewById(R.id.saveAddressButton);
@@ -181,35 +196,35 @@ public class UserProfilePanel extends AppCompatActivity {
         // Handle Save button click
         saveNameButton.setOnClickListener(v -> {
             String streetName = streetNameInput.getText().toString().trim();
-            String baranggayName = baranggayNameInput.getText().toString().trim();
+            String barangayName = barangayNameInput.getText().toString().trim();
             String cityName = cityNameInput.getText().toString().trim();
 
             // Check if all fields are non-empty
-            if (streetName.isEmpty() || baranggayName.isEmpty() || cityName.isEmpty()) {
+            if (streetName.isEmpty() || barangayName.isEmpty() || cityName.isEmpty()) {
                 // Show error message if either field is empty
                 if (streetName.isEmpty()) {
                     streetNameInput.setError("Street name is required");
                 }
-                if (baranggayName.isEmpty()) {
-                    baranggayNameInput.setError("Baranggay name is required");
+                if (barangayName.isEmpty()) {
+                    barangayNameInput.setError("Barangay name is required");
                 }
             } else {
-                // Validate if the baranggay exists in district1 or district2
+                // Validate if the barangay exists in district1 or district2
                 String district = "";
 
-                if (district1.contains(baranggayName)) {
+                if (district1.contains(barangayName)) {
                     district = "District 1";
-                } else if (district2.contains(baranggayName)) {
+                } else if (district2.contains(barangayName)) {
                     district = "District 2";
                 }
 
                 // If the district was found, append it to the address
                 if (!district.isEmpty()) {
-                    String address = streetName + ", " + baranggayName + ", " + district + ", " + cityName;
+                    String address = streetName + ", " + barangayName + ", " + district + ", " + cityName;
                     addressTextView.setText(address); // Update the TextView with the new name
                 } else {
-                    // If the baranggay is not found in either district
-                    Toast.makeText(this, "Invalid Baranggay Name", Toast.LENGTH_SHORT).show();
+                    // If the barangay is not found in either district
+                    Toast.makeText(this, "Invalid Barangay Name", Toast.LENGTH_SHORT).show();
                     return;
                 }
 

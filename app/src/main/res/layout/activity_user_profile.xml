@@ -12,38 +12,40 @@
     <!-- Logo -->
     <ImageView
         android:id="@+id/profile_logo"
-        android:contentDescription="@string/user_profile_logo"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        app:srcCompat="@drawable/truck_logo"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="80dp"
         android:background="@null"
-        android:scaleType="fitCenter"
+        android:contentDescription="@string/user_profile_logo"
         android:foreground="@null"
+        android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="80dp"/>
+        app:srcCompat="@drawable/truck_logo"
+        tools:ignore="ImageContrastCheck" />
 
     <!-- Name Field -->
     <ImageView
         android:id="@+id/nameFieldView"
-        android:contentDescription="@string/name_field_img"
         android:layout_width="360dp"
         android:layout_height="50dp"
-        app:srcCompat="@drawable/up_profile_field"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="247dp"
         android:background="@null"
-        android:scaleType="fitCenter"
+        android:contentDescription="@string/name_field_img"
         android:foreground="@null"
+        android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="247dp"/>
+        app:srcCompat="@drawable/up_profile_field"
+        tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:id="@+id/nameTextView"
         android:contentDescription="@string/name_text_field"
         android:background="@android:color/transparent"
-        android:hint="Full Name"
+        android:hint="@string/full_name_hint"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textSize="14sp"
@@ -53,7 +55,8 @@
         app:layout_constraintEnd_toEndOf="@+id/nameFieldView"
         app:layout_constraintStart_toStartOf="@+id/nameFieldView"
         app:layout_constraintTop_toTopOf="@+id/nameFieldView"
-        android:layout_marginStart="20dp"/>
+        android:layout_marginStart="20dp"
+        tools:ignore="ContentDescription" />
 
     <ImageButton
         android:id="@+id/nameEditButton"
@@ -74,33 +77,35 @@
     <!-- Address Field -->
     <ImageView
         android:id="@+id/addressFieldView"
-        android:contentDescription="@string/address_field_img"
         android:layout_width="360dp"
         android:layout_height="50dp"
-        app:srcCompat="@drawable/up_profile_field"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="303dp"
         android:background="@null"
-        android:scaleType="fitCenter"
+        android:contentDescription="@string/address_field_img"
         android:foreground="@null"
+        android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="303dp"/>
+        app:srcCompat="@drawable/up_profile_field"
+        tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:id="@+id/addressTextView"
-        android:contentDescription="@string/address_text_field"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:background="@android:color/transparent"
-        android:hint="Address"
-        android:textSize="14sp"
+        android:contentDescription="@string/address_text_field"
         android:fontFamily="@font/poppins_regular"
+        android:hint="@string/address_hint"
         android:textColor="@color/black"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/addressFieldView"
         app:layout_constraintEnd_toEndOf="@+id/addressFieldView"
         app:layout_constraintStart_toStartOf="@+id/addressFieldView"
         app:layout_constraintTop_toTopOf="@+id/addressFieldView"
-        android:layout_marginStart="20dp"/>
+        tools:ignore="ContentDescription,TextContrastCheck" />
 
     <ImageButton
         android:id="@+id/addressEditButton"
@@ -121,41 +126,43 @@
     <!-- Contact Field -->
     <ImageView
         android:id="@+id/contactFieldView"
-        android:contentDescription="@string/contact_field_img"
         android:layout_width="360dp"
         android:layout_height="50dp"
-        app:srcCompat="@drawable/up_profile_field"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="359dp"
         android:background="@null"
-        android:scaleType="fitCenter"
+        android:contentDescription="@string/contact_field_img"
         android:foreground="@null"
+        android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="359dp"/>
+        app:srcCompat="@drawable/up_profile_field"
+        tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:id="@+id/contactTextView"
-        android:contentDescription="@string/contact_text_field"
-        android:background="@android:color/transparent"
-        android:hint="Contact"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textSize="14sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="60dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/contact_text_field"
         android:fontFamily="@font/poppins_regular"
+        android:hint="@string/contact_hint"
         android:textColor="@color/black"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/contactFieldView"
         app:layout_constraintEnd_toEndOf="@+id/contactFieldView"
         app:layout_constraintStart_toStartOf="@+id/contactFieldView"
         app:layout_constraintTop_toTopOf="@+id/contactFieldView"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="60dp"/>
+        tools:ignore="ContentDescription,TextContrastCheck" />
 
     <EditText
         android:id="@+id/contactInput"
         android:contentDescription="@string/contact_text_field"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Enter your contact"
+        android:hint="@string/enter_your_contact_hint"
         android:visibility="gone"
         android:textColor="@color/black"
         android:textColorHint="#A9A9A9"
@@ -166,7 +173,8 @@
         app:layout_constraintStart_toStartOf="@+id/contactFieldView"
         app:layout_constraintTop_toTopOf="@+id/contactFieldView"
         android:layout_marginStart="20dp"
-        android:layout_marginEnd="60dp"/>
+        android:layout_marginEnd="60dp"
+        tools:ignore="Autofill,ContentDescription,TextFields" />
 
     <ImageButton
         android:id="@+id/contactEditButton"
@@ -201,27 +209,28 @@
 
     <TextView
         android:id="@+id/emailTextView"
-        android:contentDescription="@string/email_text_field"
-        android:background="@android:color/transparent"
-        android:hint="Email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textSize="14sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="60dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/email_text_field"
         android:fontFamily="@font/poppins_regular"
+        android:hint="@string/email_hint"
         android:textColor="@color/black"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/emailFieldView"
         app:layout_constraintEnd_toEndOf="@+id/emailFieldView"
         app:layout_constraintStart_toStartOf="@+id/emailFieldView"
         app:layout_constraintTop_toTopOf="@+id/emailFieldView"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="60dp"/>
+        tools:ignore="ContentDescription,TextContrastCheck" />
 
     <EditText
         android:id="@+id/emailInput"
         android:contentDescription="@string/email_text_field"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Enter your email"
+        android:hint="@string/enter_your_email_hint"
         android:inputType="textEmailAddress"
         android:visibility="gone"
         android:textColor="@color/black"
@@ -233,7 +242,8 @@
         app:layout_constraintStart_toStartOf="@+id/emailFieldView"
         app:layout_constraintTop_toTopOf="@+id/emailFieldView"
         android:layout_marginStart="20dp"
-        android:layout_marginEnd="60dp"/>
+        android:layout_marginEnd="60dp"
+        tools:ignore="Autofill,ContentDescription" />
 
     <ImageButton
         android:id="@+id/emailEditButton"
@@ -295,7 +305,7 @@
             app:layout_constraintTop_toTopOf="@+id/supportLayout"
             app:srcCompat="@drawable/up_faq_button" />
 
-        <!-- Log Out Button -->
+        <!-- Log Out Button
         <ImageButton
             android:id="@+id/logOutButton"
             android:layout_width="360dp"
@@ -311,7 +321,7 @@
             app:layout_constraintEnd_toEndOf="@+id/supportLayout"
             app:layout_constraintStart_toStartOf="@+id/supportLayout"
             app:layout_constraintTop_toTopOf="@+id/supportLayout"
-            app:srcCompat="@drawable/up_logout_button" />
+            app:srcCompat="@drawable/up_logout_button" /> -->
     </LinearLayout>
 
     <!-- Name Form -->
@@ -343,7 +353,7 @@
                 android:contentDescription="@string/name_field_cardview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="First Name"
+                android:text="@string/first_name_hint"
                 android:fontFamily="@font/poppins_medium"
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
@@ -356,6 +366,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:contentDescription="@string/todo_content_desc"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/up_profile_field" />
 
@@ -364,12 +375,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@android:color/transparent"
-                    android:hint="Enter your first name"
+                    android:hint="@string/enter_your_first_name_hint"
                     android:padding="16dp"
                     android:textColor="@android:color/black"
                     android:textColorHint="#A9A9A9"
                     android:textSize="16sp"
-                    android:fontFamily="@font/poppins_regular" />
+                    android:fontFamily="@font/poppins_regular"
+                    tools:ignore="Autofill,TextFields" />
             </androidx.cardview.widget.CardView>
 
             <!-- Text Last Name -->
@@ -377,7 +389,7 @@
                 android:contentDescription="@string/name_field_cardview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Last Name"
+                android:text="@string/last_name_hint"
                 android:fontFamily="@font/poppins_medium"
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
@@ -391,19 +403,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/up_profile_field" />
+                    app:srcCompat="@drawable/up_profile_field"
+                    tools:ignore="ContentDescription" />
 
                 <EditText
                     android:id="@+id/lastNameInput"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@android:color/transparent"
-                    android:hint="Enter your last name"
+                    android:hint="@string/enter_your_last_name_hint"
                     android:padding="16dp"
                     android:textColor="@android:color/black"
                     android:textColorHint="#A9A9A9"
                     android:textSize="16sp"
-                    android:fontFamily="@font/poppins_regular" />
+                    android:fontFamily="@font/poppins_regular"
+                    tools:ignore="Autofill,TextFields" />
             </androidx.cardview.widget.CardView>
 
             <!-- Save Button -->
@@ -412,7 +426,7 @@
                 android:contentDescription="@string/save_edit_btn"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="Save"
+                android:text="@string/save_txt"
                 android:textColor="@android:color/white"
                 android:backgroundTint="#4CAF50"
                 android:textSize="16sp"
@@ -425,7 +439,7 @@
                 android:contentDescription="@string/cancel_edit_btn"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="Cancel"
+                android:text="@string/cancel_txt"
                 android:textColor="@android:color/white"
                 android:backgroundTint="#F44336"
                 android:textSize="16sp"
@@ -464,7 +478,7 @@
                 android:contentDescription="@string/address_field_cardview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Street Name"
+                android:text="@string/street_name"
                 android:fontFamily="@font/poppins_medium"
                 android:textColor="@android:color/black"
                 android:textSize="16sp" />
@@ -478,19 +492,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/up_profile_field" />
+                    app:srcCompat="@drawable/up_profile_field"
+                    tools:ignore="ContentDescription" />
 
                 <EditText
                     android:id="@+id/streetNameInput"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@android:color/transparent"
-                    android:hint="Enter your street name"
+                    android:hint="@string/enter_your_street_name_hint"
                     android:padding="16dp"
                     android:textColor="@android:color/black"
                     android:textColorHint="#A9A9A9"
                     android:textSize="16sp"
-                    android:fontFamily="@font/poppins_regular" />
+                    android:fontFamily="@font/poppins_regular"
+                    tools:ignore="Autofill,TextFields" />
             </androidx.cardview.widget.CardView>
 
             <!-- Text Baranggay -->
@@ -498,7 +514,7 @@
                 android:contentDescription="@string/address_field_cardview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Baranggay"
+                android:text="@string/barangay_txt"
                 android:fontFamily="@font/poppins_medium"
                 android:textColor="@android:color/black"
                 android:textSize="16sp" />
@@ -512,19 +528,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/up_profile_field" />
+                    app:srcCompat="@drawable/up_profile_field"
+                    tools:ignore="ContentDescription" />
 
                 <EditText
                     android:id="@+id/baranggayNameInput"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@android:color/transparent"
-                    android:hint="Enter your baranggay name"
+                    android:hint="@string/enter_your_barangay_name_hint"
                     android:padding="16dp"
                     android:textColor="@android:color/black"
                     android:textColorHint="#A9A9A9"
                     android:textSize="16sp"
-                    android:fontFamily="@font/poppins_regular" />
+                    android:fontFamily="@font/poppins_regular"
+                    tools:ignore="Autofill,TextFields" />
             </androidx.cardview.widget.CardView>
 
             <!-- Text City or State -->
@@ -532,7 +550,7 @@
                 android:contentDescription="@string/address_field_cardview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="City or State"
+                android:text="@string/city_or_state"
                 android:fontFamily="@font/poppins_medium"
                 android:textColor="@android:color/black"
                 android:textSize="16sp" />
@@ -546,14 +564,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/up_profile_field" />
+                    app:srcCompat="@drawable/up_profile_field"
+                    tools:ignore="ContentDescription" />
 
                 <EditText
                     android:id="@+id/cityNameInput"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@android:color/transparent"
-                    android:text="San Juan City"
+                    android:text="@string/san_juan_city"
                     android:focusable="false"
                     android:clickable="false"
                     android:editable="false"
@@ -561,7 +580,8 @@
                     android:textColor="@android:color/black"
                     android:textColorHint="#A9A9A9"
                     android:textSize="16sp"
-                    android:fontFamily="@font/poppins_regular" />
+                    android:fontFamily="@font/poppins_regular"
+                    tools:ignore="Autofill,Deprecated,TextFields" />
             </androidx.cardview.widget.CardView>
 
             <!-- Save Button -->
@@ -570,7 +590,7 @@
                 android:contentDescription="@string/save_edit_btn"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="Save"
+                android:text="@string/save_text"
                 android:textColor="@android:color/white"
                 android:backgroundTint="#4CAF50"
                 android:textSize="16sp"
@@ -583,7 +603,7 @@
                 android:contentDescription="@string/cancel_edit_btn"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="Cancel"
+                android:text="@string/cancel_text"
                 android:textColor="@android:color/white"
                 android:backgroundTint="#F44336"
                 android:textSize="16sp"
