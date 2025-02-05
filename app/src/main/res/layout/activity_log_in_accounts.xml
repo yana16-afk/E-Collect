@@ -6,17 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_white_green"
-    tools:context=".MainActivity">
+    tools:context=".LogInAccounts">
 
-    <TextView
-        android:id="@+id/txt_ecollect"
+    <ImageView
+        android:id="@+id/txt_welcome"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="130dp"
         android:layout_marginTop="85dp"
-        android:text="E-Collect"
-        android:textColor="@color/darkGreen"
-        android:textSize="60sp"
-        android:textStyle="bold"
+        android:src="@drawable/txt_welcome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,34 +22,39 @@
     <ImageView
         android:id="@+id/logo"
         android:layout_width="380dp"
-        android:layout_height="320dp"
+        android:layout_height="300dp"
         android:layout_marginTop="5dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/icon_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_ecollect" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_welcome" />
 
-    <TextView
-        android:layout_width="300dp"
-        android:layout_height="80dp"
-        android:layout_marginBottom="220dp"
-        android:gravity="center"
-        android:text="Your Go-To Solution for Waste Collection Schedules!"
-        android:textColor="@color/black"
-        android:textSize="23sp"
+
+    <Button
+        android:id="@+id/btn_user"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="185dp"
+        android:background="@drawable/bg_green_btn"
+        android:text="User Log In"
+        android:textColor="@color/white"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <Button
-        android:id="@+id/btn_start"
+        android:id="@+id/btn_admin"
         android:layout_width="260dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="155dp"
+        android:layout_marginBottom="100dp"
         android:background="@drawable/bg_green_btn"
-        android:text="Get Started"
+        android:text="Admin Log In"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -67,24 +69,24 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="70dp"
-        android:text="Already have an account?"
+        android:text="Don't have an account?"
         android:textColor="@color/black"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.282"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_start"
+        app:layout_constraintTop_toBottomOf="@+id/btn_admin"
         app:layout_constraintVertical_bias="0.145" />
 
     <TextView
-        android:id="@+id/btn_sign_in"
+        android:id="@+id/btn_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="220dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="70dp"
-        android:text="Sign In"
+        android:text="Register"
         android:textColor="@color/darkGreen"
         android:textSize="15sp"
         android:textStyle="bold"
@@ -92,8 +94,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.282"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_start"
+        app:layout_constraintTop_toBottomOf="@+id/btn_admin"
         app:layout_constraintVertical_bias="0.145" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
