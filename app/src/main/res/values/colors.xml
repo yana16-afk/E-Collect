@@ -5,4 +5,8 @@
     <color name="_02bd15">#58BF5F</color>
     <color name="gray">#818181</color>
     <color name="green">#37B943</color>
+    <color name="lightGreen">#8DE896</color>
+    <color name="darkGreen">#4F8254</color>
+    <color name="green">#37B943</color>
+    <color name="splash_background">#8DE896</color>
 </resources>
